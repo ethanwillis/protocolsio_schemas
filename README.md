@@ -25,7 +25,7 @@ This package is meant to provide a collection of schemas that model all objects 
 npm install --save protocolsio-schemas
 ```
 
-# Quickstart
+# Quick Start
 ```javascript
 import { ProtocolsIOValidator, User } from 'protocolsio-schemas'
 let u = {
