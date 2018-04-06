@@ -1,7 +1,5 @@
+import { ProtocolsIOValidator } from './ProtocolsIOValidator'
 import { Image } from '../schemas/Image';
-
-let Validator = require('jsonschema').Validator;
-let v = new Validator();
 
 let i = {
     "image": {
@@ -10,5 +8,4 @@ let i = {
     }
 };
 
-console.log(v.validate(i, Image))
-
+console.log(ProtocolsIOValidator.validate(i, Image))

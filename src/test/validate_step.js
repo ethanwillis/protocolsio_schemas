@@ -1,7 +1,5 @@
+import { ProtocolsIOValidator } from './ProtocolsIOValidator'
 import { Step } from '../schemas/Step';
-
-let Validator = require('jsonschema').Validator;
-let v = new Validator();
 
 let s = {
   "id": 595209,
@@ -19,4 +17,4 @@ let s = {
   }]
 }
 
-console.log(v.validate(s, Step));
+console.log(ProtocolsIOValidator.validate(s, Step));

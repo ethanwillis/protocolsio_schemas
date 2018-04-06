@@ -1,9 +1,12 @@
+import { ProtocolsIOValidator } from './ProtocolsIOValidator'
 import { StepComponent } from '../schemas/StepComponent';
 
-let Validator = require('jsonschema').Validator;
-let v = new Validator();
+/*
+ Create all test input objects for both valid and invalid cases.
+*/
 
-let sc1 = {
+// Valid Cases
+let sc1_valid = {
   "id": 1023444,
   "guid": "A38362CBC954458FB069F821B6526B38",
   "previous_id": 1023443,
@@ -12,7 +15,7 @@ let sc1 = {
   "title": "Amount"
 }
 
-let sc2 = {
+let sc2_valid = {
   "id": 1023444,
   "guid": "A38362CBC954458FB069F821B6526B38",
   "previous_id": 1023443,
@@ -29,5 +32,5 @@ let sc2 = {
   }
 };
 
-console.log(v.validate(sc1, StepComponent))
-console.log(v.validate(sc2, StepComponent))
+console.log(ProtocolsIOValidator.validate(sc1, StepComponent))
+console.log(ProtocolsIOValidator.validate(sc2, StepComponent))

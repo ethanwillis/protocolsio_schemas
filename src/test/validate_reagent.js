@@ -1,11 +1,5 @@
+import { ProtocolsIOValidator } from './ProtocolsIOValidator'
 import { Reagent } from '../schemas/Reagent';
-import { User } from '../schemas/User';
-import { Image } from '../schemas/Image';
-
-let Validator = require('jsonschema').Validator;
-let v = new Validator();
-v.addSchema(User);
-v.addSchema(Image);
 
 let r = {
   "id": 19751,
@@ -26,4 +20,4 @@ let r = {
   }
 }
 
-console.log(v.validate(r, Reagent))
+console.log(ProtocolsIOValidator.validate(r, Reagent))
