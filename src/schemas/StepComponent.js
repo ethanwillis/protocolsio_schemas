@@ -34,77 +34,60 @@ let StepComponent = {
 			"type": "string"
 		},
 		"source": {
-			"oneOf": [
+			"description": "variative object of component, can be determine by type_id",
+			"anyOf": [
 				{
-					"description": "variative object of component, can be determine by type_id",
 					"$ref": "./StepComponentType1"
 				},
 				{
-					"description": "variative object of component, can be determine by type_id",
 					"$ref": "./StepComponentType3"
 				},
 				{
-					"description": "variative object of component, can be determine by type_id",
 					"$ref": "./StepComponentType4"
 				},
 				{
-					"description": "variative object of component, can be determine by type_id",
 					"$ref": "./StepComponentType6"
 				},
 				{
-					"description": "variative object of component, can be determine by type_id",
 					"$ref": "./StepComponentType7"
 				},
 				{
-					"description": "variative object of component, can be determine by type_id",
 					"$ref": "./StepComponentType8"
 				},
 				{
-					"description": "variative object of component, can be determine by type_id",
 					"$ref": "./StepComponentType9"
 				},
 				{
-					"description": "variative object of component, can be determine by type_id",
 					"$ref": "./StepComponentType13"
 				},
 				{
-					"description": "variative object of component, can be determine by type_id",
 					"$ref": "./StepComponentType15"
 				},
 				{
-					"description": "variative object of component, can be determine by type_id",
 					"$ref": "./StepComponentType17"
 				},
 				{
-					"description": "variative object of component, can be determine by type_id",
 					"$ref": "./StepComponentType18"
 				},
 				{
-					"description": "variative object of component, can be determine by type_id",
 					"$ref": "./StepComponentType19"
 				},
 				{
-					"description": "variative object of component, can be determine by type_id",
 					"$ref": "./StepComponentType20"
 				},
 				{
-					"description": "variative object of component, can be determine by type_id",
 					"$ref": "./StepComponentType21"
 				},
 				{
-					"description": "variative object of component, can be determine by type_id",
 					"$ref": "./StepComponentType22"
 				},
 				{
-					"description": "variative object of component, can be determine by type_id",
 					"$ref": "./StepComponentType24"
 				},
 				{
-					"description": "variative object of component, can be determine by type_id",
 					"$ref": "./StepComponentType25"
 				},
 				{
-					"description": "variative object of component, can be determine by type_id",
 					"$ref": "./StepComponentType26"
 				}
 			]
