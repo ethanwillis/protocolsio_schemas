@@ -1,7 +1,9 @@
 import { User } from '../schemas/User';
+import { Image } from '../schemas/Image';
 
 let Validator = require('jsonschema').Validator;
 let v = new Validator();
+v.addSchema(Image);
 
 let u = {
     "user": {

@@ -1,4 +1,4 @@
-import { Image } from './Image'
+// Depends on { Image } 
 
 let User = {
 	"id": "/ProtocolsIO/User",
@@ -23,7 +23,7 @@ let User = {
 			"type": ["string", "null"]
 		},
 		"image": {
-			"$ref": "/ProtocolsIO/Image"
+			"$ref": "./Image"
 		}
 	}
 }
