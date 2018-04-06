@@ -66,7 +66,7 @@ let Protocol = {
 				"$ref": "./User"
 			}
 		},
-		"steps" {
+		"steps": {
 			"description": "All of the steps in this protocol.",
 			"type": "array",
 			"items": {
