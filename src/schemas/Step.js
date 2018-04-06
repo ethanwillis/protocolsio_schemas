@@ -1,4 +1,4 @@
-import { StepComponent } from './StepComponent'
+// Depends on { StepComponent }
 
 let Step = {
 	"id": "/ProtocolsIO/Step",
@@ -30,7 +30,7 @@ let Step = {
 			"description": "list of step components.",
 			"type": "array",
 			"items": {
-				"$ref": "/ProtocolsIO/StepComponent"
+				"$ref": "./StepComponent"
 			}
 		}
 	}

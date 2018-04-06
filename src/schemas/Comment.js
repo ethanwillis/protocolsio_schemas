@@ -1,5 +1,6 @@
 // Depends on { User }
 // Depends on { Image }
+
 let Comment = {
 	"id": "/ProtocolsIO/Comment",
 	"title": "Comment",
@@ -28,7 +29,7 @@ let Comment = {
 		},
 		"changed_on": {
 			"description": "unix timestamp. date/time when comment was modified last time.",
-			"type": "integer" 
+			"type": "integer"
 		},
 		"creator": {
 			"description": "comment creator.",
@@ -38,7 +39,7 @@ let Comment = {
 			"description": "comment replies.",
 			"type": "array",
 			"items": {
-				"$ref": "/ProtocolsIO/Comment"
+				"$ref": "./Comment"
 			}
 		}
 	}

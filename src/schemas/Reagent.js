@@ -1,5 +1,4 @@
 // Depends on { User }
-// Depends on { Image}
 
 let Reagent = {
 	"id": "/ProtocolsIO/Reagent",

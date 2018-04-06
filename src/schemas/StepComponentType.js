@@ -1,7 +1,11 @@
+// Depends on { Case }
+
+// These imports are necessary because several of these ComponentTypes exactly mirror
+// these objects. For an example search Comment.properties, Protocol.properties,
+// or Reagent.properties in this file.
 import { Comment } from './Comment'
-import { Reagent } from './Reagent'
 import { Protocol } from './Protocol'
-import { Case }  from './Case'
+import { Reagent } from './Reagent'
 
 // "Description" Type: Description of the step, can contain html strings
 let StepComponentType1 = {
@@ -143,12 +147,7 @@ let StepComponentType13 = {
 	"title": "StepComponentType13",
 	"description": "A Protocols.io StepComponentType13 object. Comment Type. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
-	"properties": {
-		"source_object": {
-			"description": "source object represents usual comment object",
-			"$ref": "/ProtocolsIO/Comment"
-		}
-	}
+	"properties": Comment.properties
 }
 
 // "Command Package" Type
@@ -197,12 +196,7 @@ let StepComponentType18 = {
 	"title": "StepComponentType18",
 	"description": "A Protocols.io StepComponentType18 object. Protocol Type. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
-	"properties": {
-		"source_object": {
-			"description": "source object represents usual protocol object.",
-			"$ref": "/ProtocolsIO/Protocol"
-		}
-	}
+	"properties": Protocol.properties
 }
 
 // "Safety Information" Type
@@ -229,12 +223,7 @@ let StepComponentType20 = {
 	"title": "StepComponentType20",
 	"description": "A Protocols.io StepComponentType20 object. Reagent Type. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
-	"properties": {
-		"source_object": {
-			"description": "source object represents usual reagent object",
-			"$ref": "/ProtocolsIO/Reagent"
-		}
-	}
+	"properties": Reagent.properties
 }
 
 // "Step Cases" Type
@@ -248,7 +237,7 @@ let StepComponentType21 = {
 			"description": "list of case objects.",
 			"type": "array",
 			"items": {
-				"$ref": "/ProtocolsIO/Case"
+				"$ref": "./Case"
 			}
 		}
 	}
@@ -322,12 +311,14 @@ let StepComponentType26 = {
 	"title": "StepComponentType26",
 	"description": "A Protocols.io StepComponentType26 object. Note Type. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
-	"properties": {
-		"source_object": {
-			"description": "source object represents usual comment object.",
-			"$ref": "/ProtocolsIO/Comment"
-		}
-	}
+	"properties": Comment.properties
 }
 
-export { StepComponentType1, StepComponentType3, StepComponentType4, StepComponentType6, StepComponentType7, StepComponentType8, StepComponentType9, StepComponentType13, StepComponentType15, StepComponentType17, StepComponentType18, StepComponentType19, StepComponentType20, StepComponentType21, StepComponentType24, StepComponentType25, StepComponentType26 }
+export {
+	StepComponentType1, StepComponentType3, StepComponentType4,
+	StepComponentType6, StepComponentType7, StepComponentType8,
+	StepComponentType9, StepComponentType13, StepComponentType15,
+	StepComponentType17, StepComponentType18, StepComponentType19,
+	StepComponentType20, StepComponentType21, StepComponentType22,
+	StepComponentType24, StepComponentType25, StepComponentType26
+}
