@@ -47,16 +47,6 @@ console.log(ProtocolsIOValidator.validate(u, User))
 ```
 
 # Objects
-- User
-- Image
-- Reagent
-- Comment
-- Small Protocol
-- Protocol
-- Step
-- Step Component
-- Step Component Type
-- Case
 
 ## User
 | property | type | description |
@@ -148,7 +138,7 @@ console.log(ProtocolsIOValidator.validate(u, User))
 | source | Array<[StepComponentType](#step-component-type)> | variative object of component, can be determine by type_id |
 
 ## Step Component Type
-There are LOTS of Step Component Types: [Read More Here]
+There are LOTS of Step Component Types: [Read More Here](docs/StepComponentTypes.md)
 
 ## Case
 | property | type | description |
