@@ -198,3 +198,4 @@ In the root folder of the project run the following command to run tests.
 npm run test
 ```
 Currently this does nothing while we're working on the Mocha test cases.
+However you can run validation on example objects to ensure your schemas are working from within the ```src/tests``` folder.
