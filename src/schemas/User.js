@@ -1,4 +1,4 @@
-import { Image } from './Image'
+// Depends on { Image }
 
 let User = {
 	"id": "/ProtocolsIO/User",
@@ -7,23 +7,24 @@ let User = {
 	"type": "object",
 	"properties": {
 		"name": {
-			"description": "",
+			"description": "user full name",
 			"type": "string"
 		},
 		"affiliation": {
-			"description": "",
+			"description": "user affiliation",
 			"type": ["string", "null"]
 		},
 		"username": {
-			"description": "",
+			"description": "username",
 			"type": ["string", "null"]
 		},
 		"link": {
-			"description": "",
+			"description": "external url.",
 			"type": ["string", "null"]
 		},
 		"image": {
-			"$ref": "/ProtocolsIO/Image"
+			"description": "user profile image",
+			"$ref": "./Image"
 		}
 	}
 }

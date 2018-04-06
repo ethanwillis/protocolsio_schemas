@@ -28,4 +28,4 @@ var Case = {
 	}
 };
 
-exports.Comment = Comment;
+exports.Case = Case;

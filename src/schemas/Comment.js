@@ -1,4 +1,5 @@
-import { User } from './User'
+// Depends on { User }
+// Depends on { Image }
 
 let Comment = {
 	"id": "/ProtocolsIO/Comment",
@@ -28,17 +29,17 @@ let Comment = {
 		},
 		"changed_on": {
 			"description": "unix timestamp. date/time when comment was modified last time.",
-			"type": "integer" 
+			"type": "integer"
 		},
 		"creator": {
 			"description": "comment creator.",
-			"$ref": "/ProtocolsIO/User"
+			"$ref": "./User"
 		},
 		"comments": {
 			"description": "comment replies.",
 			"type": "array",
 			"items": {
-				"$ref": "/ProtocolsIO/Comment"
+				"$ref": "./Comment"
 			}
 		}
 	}

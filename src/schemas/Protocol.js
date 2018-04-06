@@ -1,6 +1,6 @@
-import { Image } from './Image'
-import { User } from './User'
-import { SmallProtocol } from './SmallProtocol'
+// Depends on { User }
+// Depends on { Image }
+// Depends on { SmallProtocol }
 
 let Protocol = {
 	"id": "/ProtocolsIO/Protocol",
@@ -18,7 +18,7 @@ let Protocol = {
 		},
 		"image": {
 			"description": "protocol image.",
-			"$ref": "/ProtocolsIO/Image"
+			"$ref": "./Image"
 		},
 		"doi": {
 			"description": "DOI of this protocol.",
@@ -38,7 +38,7 @@ let Protocol = {
 		},
 		"creator": {
 			"description": "protocol creator",
-			"$ref": "/ProtocolsIO/User"
+			"$ref": "./User"
 		},
 		"public": {
 			"description": "1 or 0. 1 means that this protocol is public and 0 otherwise.",
@@ -48,7 +48,7 @@ let Protocol = {
 			"description": "list of versions",
 			"type": "array",
 			"items": {
-				"$ref": "/ProtocolsIO/SmallProtocol"
+				"$ref": "./SmallProtocol"
 			}
 		},
 		"version_id": {
@@ -63,7 +63,21 @@ let Protocol = {
 			"description": "list of user or empty array",
 			"type": "array",
 			"items": {
-				"$ref": "/ProtocolsIO/User"
+				"$ref": "./User"
+			}
+		},
+		"steps" {
+			"description": "All of the steps in this protocol.",
+			"type": "array",
+			"items": {
+				"$ref": "./Step"
+			}
+		},
+		"materials": {
+			"description": "Reagents required for this protocol.",
+			"type": "array",
+			"items": {
+				"$ref": "./Reagent"
 			}
 		}
 	},

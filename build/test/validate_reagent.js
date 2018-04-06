@@ -1,9 +1,8 @@
 'use strict';
 
-var _Reagent = require('../schemas/Reagent');
+var _ProtocolsIOValidator = require('./ProtocolsIOValidator');
 
-var Validator = require('jsonschema').Validator;
-var v = new Validator();
+var _Reagent = require('../schemas/Reagent');
 
 var r = {
   "id": 19751,
@@ -24,4 +23,4 @@ var r = {
   }
 };
 
-console.log(v.validate(r, _Reagent.Reagent));
+console.log(_ProtocolsIOValidator.ProtocolsIOValidator.validate(r, _Reagent.Reagent));

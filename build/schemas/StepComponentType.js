@@ -3,15 +3,13 @@
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-exports.StepComponentType26 = exports.StepComponentType25 = exports.StepComponentType24 = exports.StepComponentType21 = exports.StepComponentType20 = exports.StepComponentType19 = exports.StepComponentType18 = exports.StepComponentType17 = exports.StepComponentType15 = exports.StepComponentType13 = exports.StepComponentType9 = exports.StepComponentType8 = exports.StepComponentType7 = exports.StepComponentType6 = exports.StepComponentType4 = exports.StepComponentType3 = exports.StepComponentType1 = undefined;
+exports.StepComponentType26 = exports.StepComponentType25 = exports.StepComponentType24 = exports.StepComponentType22 = exports.StepComponentType21 = exports.StepComponentType20 = exports.StepComponentType19 = exports.StepComponentType18 = exports.StepComponentType17 = exports.StepComponentType15 = exports.StepComponentType13 = exports.StepComponentType9 = exports.StepComponentType8 = exports.StepComponentType7 = exports.StepComponentType6 = exports.StepComponentType4 = exports.StepComponentType3 = exports.StepComponentType1 = undefined;
 
 var _Comment = require('./Comment');
 
-var _Reagent = require('./Reagent');
-
 var _Protocol = require('./Protocol');
 
-var _Case = require('./Case');
+var _Reagent = require('./Reagent');
 
 // "Description" Type: Description of the step, can contain html strings
 var StepComponentType1 = {
@@ -27,7 +25,12 @@ var StepComponentType1 = {
 	}
 
 	// "Amount" Type: A quantity of something, typically the total of a reagent, size, value etc.
-};var StepComponentType3 = {
+}; // Depends on { Case }
+
+// These imports are necessary because several of these ComponentTypes exactly mirror
+// these objects. For an example search Comment.properties, Protocol.properties,
+// or Reagent.properties in this file.
+var StepComponentType3 = {
 	"id": "/ProtocolsIO/StepComponentType3",
 	"title": "StepComponentType3",
 	"description": "A Protocols.io StepComponentType3 object. Amount Type: A quantity of something, typically the total of a reagent, size, value etc. http://apidoc.protocols.io/v3/#step-component-types",
@@ -146,12 +149,7 @@ var StepComponentType1 = {
 	"title": "StepComponentType13",
 	"description": "A Protocols.io StepComponentType13 object. Comment Type. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
-	"properties": {
-		"source_object": {
-			"description": "source object represents usual comment object",
-			"$ref": "/ProtocolsIO/Comment"
-		}
-	}
+	"properties": _Comment.Comment.properties
 
 	// "Command Package" Type
 };var StepComponentType15 = {
@@ -197,12 +195,7 @@ var StepComponentType1 = {
 	"title": "StepComponentType18",
 	"description": "A Protocols.io StepComponentType18 object. Protocol Type. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
-	"properties": {
-		"source_object": {
-			"description": "source object represents usual protocol object.",
-			"$ref": "/ProtocolsIO/Protocol"
-		}
-	}
+	"properties": _Protocol.Protocol.properties
 
 	// "Safety Information" Type
 };var StepComponentType19 = {
@@ -227,12 +220,7 @@ var StepComponentType1 = {
 	"title": "StepComponentType20",
 	"description": "A Protocols.io StepComponentType20 object. Reagent Type. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
-	"properties": {
-		"source_object": {
-			"description": "source object represents usual reagent object",
-			"$ref": "/ProtocolsIO/Reagent"
-		}
-	}
+	"properties": _Reagent.Reagent.properties
 
 	// "Step Cases" Type
 };var StepComponentType21 = {
@@ -245,7 +233,7 @@ var StepComponentType1 = {
 			"description": "list of case objects.",
 			"type": "array",
 			"items": {
-				"$ref": "/ProtocolsIO/Case"
+				"$ref": "./Case"
 			}
 		}
 	}
@@ -315,12 +303,7 @@ var StepComponentType1 = {
 	"title": "StepComponentType26",
 	"description": "A Protocols.io StepComponentType26 object. Note Type. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
-	"properties": {
-		"source_object": {
-			"description": "source object represents usual comment object.",
-			"$ref": "/ProtocolsIO/Comment"
-		}
-	}
+	"properties": _Comment.Comment.properties
 };
 
 exports.StepComponentType1 = StepComponentType1;
@@ -337,6 +320,7 @@ exports.StepComponentType18 = StepComponentType18;
 exports.StepComponentType19 = StepComponentType19;
 exports.StepComponentType20 = StepComponentType20;
 exports.StepComponentType21 = StepComponentType21;
+exports.StepComponentType22 = StepComponentType22;
 exports.StepComponentType24 = StepComponentType24;
 exports.StepComponentType25 = StepComponentType25;
 exports.StepComponentType26 = StepComponentType26;

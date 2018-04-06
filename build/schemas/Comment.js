@@ -3,9 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-exports.Comment = undefined;
-
-var _User = require("./User");
+// Depends on { User }
+// Depends on { Image }
 
 var Comment = {
 	"id": "/ProtocolsIO/Comment",
@@ -39,13 +38,13 @@ var Comment = {
 		},
 		"creator": {
 			"description": "comment creator.",
-			"$ref": "/ProtocolsIO/User"
+			"$ref": "./User"
 		},
 		"comments": {
 			"description": "comment replies.",
 			"type": "array",
 			"items": {
-				"$ref": "/ProtocolsIO/Comment"
+				"$ref": "./Comment"
 			}
 		}
 	}

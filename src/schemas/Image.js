@@ -6,11 +6,11 @@ let Image = {
 	"properties": {
 		"source": {
 			"description": "link to the image",
-			"type": "string"
+			"type": ["string", "null"]
 		},
 		"placeholder": {
 			"description": "link to the image placeholder or original image link of placeholder is not exist",
-			"type": "string"
+			"type": ["string", "null"]
 		}
 	}
 }

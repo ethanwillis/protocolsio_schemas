@@ -1,7 +1,5 @@
+import { ProtocolsIOValidator } from './ProtocolsIOValidator'
 import { Comment } from '../schemas/Comment';
-
-let Validator = require('jsonschema').Validator;
-let v = new Validator();
 
 let c1 = {
   "id": 16620,
@@ -64,5 +62,5 @@ let c2 = {
   ]
 };
 
-console.log(v.validate(c1, Comment));
-console.log(v.validate(c2, Comment));
+console.log(ProtocolsIOValidator.validate(c1, Comment));
+console.log(ProtocolsIOValidator.validate(c2, Comment));

@@ -1,11 +1,11 @@
 {
-  "name": "protocolsio_schemas",
-  "version": "0.0.1",
+  "name": "protocolsio-schemas",
+  "version": "0.0.3",
   "description": "Schemas for objects used by Protocols.io API v3",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel ./src --out-dir build"
+    "build": "babel ./src/schemas --out-dir build/schemas && babel ./src/test --out-dir build/test && babel ./src/index.js --out-file build/index.js"
   },
   "repository": {
     "type": "git",

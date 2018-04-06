@@ -1,7 +1,5 @@
+import { ProtocolsIOValidator } from './ProtocolsIOValidator'
 import { Protocol } from '../schemas/Protocol';
-
-let Validator = require('jsonschema').Validator;
-let v = new Validator();
 
 let p = {
   "id": 872,
@@ -74,7 +72,7 @@ let p = {
             "unit": "µl",
             "title": "of MGH"
           }
-        }	
+        }
       ]
     }
   ],
@@ -100,4 +98,4 @@ let p = {
   ]
 }
 
-console.log(v.validate(p, Protocol));
+console.log(ProtocolsIOValidator.validate(p, Protocol));

@@ -3,9 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-exports.Step = undefined;
-
-var _StepComponent = require("./StepComponent");
+// Depends on { StepComponent }
 
 var Step = {
 	"id": "/ProtocolsIO/Step",
@@ -37,7 +35,7 @@ var Step = {
 			"description": "list of step components.",
 			"type": "array",
 			"items": {
-				"$ref": "/ProtocolsIO/StepComponent"
+				"$ref": "./StepComponent"
 			}
 		}
 	}

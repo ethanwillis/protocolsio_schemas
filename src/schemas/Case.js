@@ -23,4 +23,4 @@ let Case = {
 	}
 }
 
-export { Comment }
+export { Case }

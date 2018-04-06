@@ -1,7 +1,5 @@
+import { ProtocolsIOValidator } from './ProtocolsIOValidator'
 import { User } from '../schemas/User';
-
-let Validator = require('jsonschema').Validator;
-let v = new Validator();
 
 let u = {
     "user": {
@@ -16,4 +14,4 @@ let u = {
     }
 }
 
-console.log(v.validate(u, User));
+console.log(ProtocolsIOValidator.validate(u, User));

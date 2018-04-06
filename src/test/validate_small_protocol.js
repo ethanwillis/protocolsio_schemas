@@ -1,7 +1,5 @@
+import { ProtocolsIOValidator } from './ProtocolsIOValidator'
 import { SmallProtocol } from '../schemas/SmallProtocol';
-
-let Validator = require('jsonschema').Validator;
-let v = new Validator();
 
 let sp = {
   "id": 8503,
@@ -16,4 +14,4 @@ let sp = {
   "published_on": 1509493090
 }
 
-console.log(v.validate(sp, SmallProtocol));
+console.log(ProtocolsIOValidator.validate(sp, SmallProtocol));

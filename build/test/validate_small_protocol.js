@@ -1,9 +1,8 @@
 'use strict';
 
-var _SmallProtocol = require('../schemas/SmallProtocol');
+var _ProtocolsIOValidator = require('./ProtocolsIOValidator');
 
-var Validator = require('jsonschema').Validator;
-var v = new Validator();
+var _SmallProtocol = require('../schemas/SmallProtocol');
 
 var sp = {
   "id": 8503,
@@ -18,4 +17,4 @@ var sp = {
   "published_on": 1509493090
 };
 
-console.log(v.validate(sp, _SmallProtocol.SmallProtocol));
+console.log(_ProtocolsIOValidator.ProtocolsIOValidator.validate(sp, _SmallProtocol.SmallProtocol));

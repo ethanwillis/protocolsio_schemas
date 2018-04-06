@@ -1,4 +1,4 @@
-import { User } from './User.js'
+// Depends on { User }
 
 let Reagent = {
 	"id": "/ProtocolsIO/Reagent",
@@ -32,7 +32,7 @@ let Reagent = {
 		},
 		"vendor": {
 			"description": "reagent vendor.",
-			"$ref": "/ProtocolsIO/User"
+			"$ref": "./User"
 		}
 	}
 }

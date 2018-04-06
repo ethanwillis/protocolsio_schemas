@@ -1,4 +1,4 @@
-import { Image } from './Image'
+// Depends on { Image }
 
 let SmallProtocol = {
 	"id": "/ProtocolsIO/SmallProtocol",
@@ -7,31 +7,31 @@ let SmallProtocol = {
 	"type": "object",
 	"properties": {
 		"id": {
-			"description": "",
+			"description": "unique protocol integer identifier.",
 			"type": "integer"
 		},
 		"title": {
-			"description": "",
+			"description": "protocol title.",
 			"type": "string"
 		},
 		"image": {
-			"description": "",
-			"$ref": "/ProtocolsIO/Image"
+			"description": "protocol image.",
+			"$ref": "./Image"
 		},
 		"version_id": {
-			"description": "",
+			"description": "0...n. Version number of this protocol.",
 			"type": "integer"
 		},
 		"doi": {
-			"description": "",
-			"type": "string"
+			"description": "DOI of this protocol.",
+			"type": ["string", "null"]
 		},
 		"uri": {
-			"description": "",
+			"description": "unique protocol text identifier.",
 			"type": "string"
 		},
 		"published_on": {
-			"description": "",
+			"description": "unix timestamp. date/time when this protocol was published.",
 			"type": ["integer", "null"]
 		}
 	}

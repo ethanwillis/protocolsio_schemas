@@ -1,9 +1,8 @@
 'use strict';
 
-var _Step = require('../schemas/Step');
+var _ProtocolsIOValidator = require('./ProtocolsIOValidator');
 
-var Validator = require('jsonschema').Validator;
-var v = new Validator();
+var _Step = require('../schemas/Step');
 
 var s = {
   "id": 595209,
@@ -21,4 +20,4 @@ var s = {
   }]
 };
 
-console.log(v.validate(s, _Step.Step));
+console.log(_ProtocolsIOValidator.ProtocolsIOValidator.validate(s, _Step.Step));
