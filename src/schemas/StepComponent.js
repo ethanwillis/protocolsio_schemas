@@ -40,7 +40,7 @@ let StepComponent = {
 				"./StepComponentType6", "./StepComponentType7", "./StepComponentType8",
 				"./StepComponentType9", "./StepComponentType13", "./StepComponentType15",
 				"./StepComponentType17", "./StepComponentType18", "./StepComponentType19",
-				"./StepComponentType20", "./StepComponentType21", "./StepComponentType22"
+				"./StepComponentType20", "./StepComponentType21", "./StepComponentType22",
 				"./StepComponentType24", "./StepComponentType25", "./StepComponentType26",
 			]
 
