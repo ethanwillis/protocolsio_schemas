@@ -1,6 +1,8 @@
 # protocolsio-schemas
 This package is meant to provide a collection of schemas that model all objects available in the [Protocols.io v3 api](http://apidoc.protocols.io/v3/). As well a [jsonschema](https://www.npmjs.com/package/jsonschema) validator object is provided that allows you to validate any instance of a Protocols.io object to check if it is valid according to the schema. All schemas are implemented using JSON-SCHEMA.
 
+View the NPM page [here](https://www.npmjs.com/package/protocolsio-schemas)
+
 ## Index
 - [Installation](#installation)
 - [Quick Start](#quick-start)
