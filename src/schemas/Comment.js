@@ -1,5 +1,5 @@
-import { User } from './User'
-
+// Depends on { User }
+// Depends on { Image }
 let Comment = {
 	"id": "/ProtocolsIO/Comment",
 	"title": "Comment",
@@ -32,7 +32,7 @@ let Comment = {
 		},
 		"creator": {
 			"description": "comment creator.",
-			"$ref": "/ProtocolsIO/User"
+			"$ref": "./User"
 		},
 		"comments": {
 			"description": "comment replies.",

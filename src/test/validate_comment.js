@@ -1,7 +1,11 @@
 import { Comment } from '../schemas/Comment';
+import { User } from '../schemas/User';
+import { Image } from '../schemas/Image';
 
 let Validator = require('jsonschema').Validator;
 let v = new Validator();
+v.addSchema(User);
+v.addSchema(Image);
 
 let c1 = {
   "id": 16620,
