@@ -70,6 +70,20 @@ var Protocol = {
 			"items": {
 				"$ref": "./User"
 			}
+		},
+		"steps": {
+			"description": "All of the steps in this protocol.",
+			"type": "array",
+			"items": {
+				"$ref": "./Step"
+			}
+		},
+		"materials": {
+			"description": "Reagents required for this protocol.",
+			"type": "array",
+			"items": {
+				"$ref": "./Reagent"
+			}
 		}
 	},
 	"required": ["id", "title", "image", "doi", "uri", "published_on", "created_on", "creator", "public", "versions", "version_id", "number_of_steps", "authors"]

@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-exports.Case = exports.Step = exports.SmallProtocol = exports.Protocol = exports.Reagent = exports.Image = exports.User = exports.Comment = exports.StepComponentType26 = exports.StepComponentType25 = exports.StepComponentType24 = exports.StepComponentType22 = exports.StepComponentType21 = exports.StepComponentType20 = exports.StepComponentType19 = exports.StepComponentType18 = exports.StepComponentType17 = exports.StepComponentType15 = exports.StepComponentType13 = exports.StepComponentType9 = exports.StepComponentType8 = exports.StepComponentType7 = exports.StepComponentType6 = exports.StepComponentType4 = exports.StepComponentType3 = exports.StepComponentType1 = undefined;
+exports.ProtocolsIOValidator = exports.Case = exports.Step = exports.SmallProtocol = exports.Protocol = exports.Reagent = exports.Image = exports.User = exports.Comment = exports.StepComponentType26 = exports.StepComponentType25 = exports.StepComponentType24 = exports.StepComponentType22 = exports.StepComponentType21 = exports.StepComponentType20 = exports.StepComponentType19 = exports.StepComponentType18 = exports.StepComponentType17 = exports.StepComponentType15 = exports.StepComponentType13 = exports.StepComponentType9 = exports.StepComponentType8 = exports.StepComponentType7 = exports.StepComponentType6 = exports.StepComponentType4 = exports.StepComponentType3 = exports.StepComponentType1 = undefined;
 
 var _StepComponentType = require('./schemas/StepComponentType');
 
@@ -24,6 +24,8 @@ var _Step = require('./schemas/Step');
 var _StepComponent = require('./schemas/StepComponent');
 
 var _Case = require('./schemas/Case');
+
+var _ProtocolsIOValidator = require('./test/ProtocolsIOValidator');
 
 exports.StepComponentType1 = _StepComponentType.StepComponentType1;
 exports.StepComponentType3 = _StepComponentType.StepComponentType3;
@@ -51,3 +53,4 @@ exports.Protocol = _Protocol.Protocol;
 exports.SmallProtocol = _SmallProtocol.SmallProtocol;
 exports.Step = _Step.Step;
 exports.Case = _Case.Case;
+exports.ProtocolsIOValidator = _ProtocolsIOValidator.ProtocolsIOValidator;
