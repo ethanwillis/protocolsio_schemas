@@ -30,7 +30,7 @@ let StepComponent = {
 			"type": "integer"
 		},
 		"title": {
-			"description": "name of component,",
+			"description": "name of component.",
 			"type": "string"
 		},
 		"source": {
