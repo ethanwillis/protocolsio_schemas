@@ -1,9 +1,8 @@
 'use strict';
 
-var _User = require('../schemas/User');
+var _ProtocolsIOValidator = require('./ProtocolsIOValidator');
 
-var Validator = require('jsonschema').Validator;
-var v = new Validator();
+var _User = require('../schemas/User');
 
 var u = {
   "user": {
@@ -18,4 +17,4 @@ var u = {
   }
 };
 
-console.log(v.validate(u, _User.User));
+console.log(_ProtocolsIOValidator.ProtocolsIOValidator.validate(u, _User.User));

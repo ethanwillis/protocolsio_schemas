@@ -1,15 +1,11 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-exports.Protocol = undefined;
-
-var _Image = require('./Image');
-
-var _User = require('./User');
-
-var _SmallProtocol = require('./SmallProtocol');
+// Depends on { User }
+// Depends on { Image }
+// Depends on { SmallProtocol }
 
 var Protocol = {
 	"id": "/ProtocolsIO/Protocol",
@@ -27,7 +23,7 @@ var Protocol = {
 		},
 		"image": {
 			"description": "protocol image.",
-			"$ref": "/ProtocolsIO/Image"
+			"$ref": "./Image"
 		},
 		"doi": {
 			"description": "DOI of this protocol.",
@@ -47,7 +43,7 @@ var Protocol = {
 		},
 		"creator": {
 			"description": "protocol creator",
-			"$ref": "/ProtocolsIO/User"
+			"$ref": "./User"
 		},
 		"public": {
 			"description": "1 or 0. 1 means that this protocol is public and 0 otherwise.",
@@ -57,7 +53,7 @@ var Protocol = {
 			"description": "list of versions",
 			"type": "array",
 			"items": {
-				"$ref": "/ProtocolsIO/SmallProtocol"
+				"$ref": "./SmallProtocol"
 			}
 		},
 		"version_id": {
@@ -72,7 +68,7 @@ var Protocol = {
 			"description": "list of user or empty array",
 			"type": "array",
 			"items": {
-				"$ref": "/ProtocolsIO/User"
+				"$ref": "./User"
 			}
 		}
 	},

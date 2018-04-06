@@ -1,9 +1,8 @@
 'use strict';
 
-var _Image = require('../schemas/Image');
+var _ProtocolsIOValidator = require('./ProtocolsIOValidator');
 
-var Validator = require('jsonschema').Validator;
-var v = new Validator();
+var _Image = require('../schemas/Image');
 
 var i = {
     "image": {
@@ -12,4 +11,4 @@ var i = {
     }
 };
 
-console.log(v.validate(i, _Image.Image));
+console.log(_ProtocolsIOValidator.ProtocolsIOValidator.validate(i, _Image.Image));

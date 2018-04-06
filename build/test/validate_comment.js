@@ -1,9 +1,8 @@
 'use strict';
 
-var _Comment = require('../schemas/Comment');
+var _ProtocolsIOValidator = require('./ProtocolsIOValidator');
 
-var Validator = require('jsonschema').Validator;
-var v = new Validator();
+var _Comment = require('../schemas/Comment');
 
 var c1 = {
   "id": 16620,
@@ -64,5 +63,5 @@ var c2 = {
   }]
 };
 
-console.log(v.validate(c1, _Comment.Comment));
-console.log(v.validate(c2, _Comment.Comment));
+console.log(_ProtocolsIOValidator.ProtocolsIOValidator.validate(c1, _Comment.Comment));
+console.log(_ProtocolsIOValidator.ProtocolsIOValidator.validate(c2, _Comment.Comment));

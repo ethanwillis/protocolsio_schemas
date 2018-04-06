@@ -3,9 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-exports.Reagent = undefined;
-
-var _User = require("./User.js");
+// Depends on { User }
 
 var Reagent = {
 	"id": "/ProtocolsIO/Reagent",
@@ -39,7 +37,7 @@ var Reagent = {
 		},
 		"vendor": {
 			"description": "reagent vendor.",
-			"$ref": "/ProtocolsIO/User"
+			"$ref": "./User"
 		}
 	}
 };
