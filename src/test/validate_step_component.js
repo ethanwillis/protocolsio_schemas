@@ -32,5 +32,5 @@ let sc2_valid = {
   }
 };
 
-console.log(ProtocolsIOValidator.validate(sc1, StepComponent))
-console.log(ProtocolsIOValidator.validate(sc2, StepComponent))
+console.log(ProtocolsIOValidator.validate(sc1_valid, StepComponent))
+console.log(ProtocolsIOValidator.validate(sc2_valid, StepComponent))
