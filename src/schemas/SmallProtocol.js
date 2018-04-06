@@ -24,7 +24,7 @@ let SmallProtocol = {
 		},
 		"doi": {
 			"description": "DOI of this protocol.",
-			"type": "string"
+			"type": ["string", "null"]
 		},
 		"uri": {
 			"description": "unique protocol text identifier.",
