@@ -15,6 +15,7 @@ import { SmallProtocol } from './schemas/SmallProtocol';
 import { Step } from './schemas/Step';
 import { StepComponent } from './schemas/StepComponent';
 import { Case } from './schemas/Case';
+import { ProtocolsIOValidator } from './test/ProtocolsIOValidator';
 
 export {
    StepComponentType1, StepComponentType3, StepComponentType4,
@@ -24,5 +25,5 @@ export {
 	 StepComponentType20, StepComponentType21, StepComponentType22,
 	 StepComponentType24, StepComponentType25, StepComponentType26,
    Comment, User, Image, Reagent, Protocol, SmallProtocol,
-   Step, Case
+   Step, Case, ProtocolsIOValidator
 }
