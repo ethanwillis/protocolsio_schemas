@@ -1,5 +1,4 @@
-import { Image } from './Image'
-
+// Depends on { Image }
 let SmallProtocol = {
 	"id": "/ProtocolsIO/SmallProtocol",
 	"title": "SmallProtocol",
@@ -16,7 +15,7 @@ let SmallProtocol = {
 		},
 		"image": {
 			"description": "",
-			"$ref": "/ProtocolsIO/Image"
+			"$ref": "./Image"
 		},
 		"version_id": {
 			"description": "",

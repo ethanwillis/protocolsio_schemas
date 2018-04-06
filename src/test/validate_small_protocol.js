@@ -1,7 +1,9 @@
 import { SmallProtocol } from '../schemas/SmallProtocol';
+import { Image } from '../schemas/Image';
 
 let Validator = require('jsonschema').Validator;
 let v = new Validator();
+v.addSchema(Image);
 
 let sp = {
   "id": 8503,
