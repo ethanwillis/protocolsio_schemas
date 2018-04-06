@@ -1,5 +1,5 @@
 {
-  "name": "protocolsio_schemas",
+  "name": "protocolsio-schemas",
   "version": "0.0.1",
   "description": "Schemas for objects used by Protocols.io API v3",
   "main": "build/index.js",
