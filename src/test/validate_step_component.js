@@ -1,5 +1,6 @@
 import { ProtocolsIOValidator } from './ProtocolsIOValidator'
 import { StepComponent } from '../schemas/StepComponent';
+var assert = require('chai').assert;
 
 /*
  Create all test input objects for both valid and invalid cases.
@@ -32,5 +33,14 @@ let sc2_valid = {
   }
 };
 
-console.log(ProtocolsIOValidator.validate(sc1_valid, StepComponent))
-console.log(ProtocolsIOValidator.validate(sc2_valid, StepComponent))
+describe('Step Component validator', function() {
+    describe('#validate', function() {
+	it('should return no errors when a step component object with a source containing a description is passed in', function() {
+	    assert.lengthOf((ProtocolsIOValidator.validate(sc1_valid, StepComponent))['errors'], 0);
+	});
+	it('should return no errors when a step component object with a source containing other things is passed in', function() {
+	    assert.lengthOf((ProtocolsIOValidator.validate(sc2_valid, StepComponent))['errors'], 0);
+	});
+    });
+});
+

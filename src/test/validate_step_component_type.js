@@ -8,6 +8,7 @@ import {
 	 StepComponentType24, StepComponentType25, StepComponentType26
  } from '../schemas/StepComponentType';
 
+var assert = require('chai').assert;
 /*
 	Create all test input objects for both valid and invalid cases.
 */
@@ -261,23 +262,30 @@ let sct26_valid = {
 // Invalid Cases TODO
 
 // Test Valid Cases.
-console.log(ProtocolsIOValidator.validate(sct1_valid, StepComponentType1));
-console.log(ProtocolsIOValidator.validate(sct3_valid, StepComponentType3));
-console.log(ProtocolsIOValidator.validate(sct4_valid, StepComponentType4));
-console.log(ProtocolsIOValidator.validate(sct6_valid, StepComponentType6));
-console.log(ProtocolsIOValidator.validate(sct7_valid, StepComponentType7));
-console.log(ProtocolsIOValidator.validate(sct8_valid, StepComponentType8));
-console.log(ProtocolsIOValidator.validate(sct9_valid, StepComponentType9));
-console.log(ProtocolsIOValidator.validate(sct13_valid, StepComponentType13));
-console.log(ProtocolsIOValidator.validate(sct15_valid, StepComponentType15));
-console.log(ProtocolsIOValidator.validate(sct17_valid, StepComponentType17));
-console.log(ProtocolsIOValidator.validate(sct18_valid, StepComponentType18));
-console.log(ProtocolsIOValidator.validate(sct19_valid, StepComponentType19));
-console.log(ProtocolsIOValidator.validate(sct20_valid, StepComponentType20));
-console.log(ProtocolsIOValidator.validate(sct21_valid, StepComponentType21));
-console.log(ProtocolsIOValidator.validate(sct22_valid, StepComponentType22));
-console.log(ProtocolsIOValidator.validate(sct24_valid, StepComponentType24));
-console.log(ProtocolsIOValidator.validate(sct25_valid, StepComponentType25));
-console.log(ProtocolsIOValidator.validate(sct26_valid, StepComponentType26));
+
+describe('Step Component Type validator', function() {
+    describe('#validate()', function() {
+	it('should return no errors when any valid step component type object is passed in', function() {
+	    assert.lengthOf((ProtocolsIOValidator.validate(sct1_valid, StepComponentType1))['errors'], 0);
+	    assert.lengthOf((ProtocolsIOValidator.validate(sct3_valid, StepComponentType3))['errors'], 0);
+	    assert.lengthOf((ProtocolsIOValidator.validate(sct4_valid, StepComponentType4))['errors'], 0);
+	    assert.lengthOf((ProtocolsIOValidator.validate(sct6_valid, StepComponentType6))['errors'], 0);
+	    assert.lengthOf((ProtocolsIOValidator.validate(sct7_valid, StepComponentType7))['errors'], 0);
+	    assert.lengthOf((ProtocolsIOValidator.validate(sct8_valid, StepComponentType8))['errors'], 0);
+	    assert.lengthOf((ProtocolsIOValidator.validate(sct9_valid, StepComponentType9))['errors'], 0);
+	    assert.lengthOf((ProtocolsIOValidator.validate(sct13_valid, StepComponentType13))['errors'], 0);
+	    assert.lengthOf((ProtocolsIOValidator.validate(sct15_valid, StepComponentType15))['errors'], 0);
+	    assert.lengthOf((ProtocolsIOValidator.validate(sct17_valid, StepComponentType17))['errors'], 0);
+	    assert.lengthOf((ProtocolsIOValidator.validate(sct18_valid, StepComponentType18))['errors'], 0);
+	    assert.lengthOf((ProtocolsIOValidator.validate(sct19_valid, StepComponentType19))['errors'], 0);
+	    assert.lengthOf((ProtocolsIOValidator.validate(sct20_valid, StepComponentType20))['errors'], 0);
+	    assert.lengthOf((ProtocolsIOValidator.validate(sct21_valid, StepComponentType21))['errors'], 0);
+	    assert.lengthOf((ProtocolsIOValidator.validate(sct22_valid, StepComponentType22))['errors'], 0);
+	    assert.lengthOf((ProtocolsIOValidator.validate(sct24_valid, StepComponentType24))['errors'], 0);
+	    assert.lengthOf((ProtocolsIOValidator.validate(sct25_valid, StepComponentType25))['errors'], 0);
+	    assert.lengthOf((ProtocolsIOValidator.validate(sct26_valid, StepComponentType26))['errors'], 0);
+	});
+    });
+});
 
 // Test Invalid Cases. TODO

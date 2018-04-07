@@ -1,5 +1,6 @@
 import { ProtocolsIOValidator } from './ProtocolsIOValidator'
 import { Step } from '../schemas/Step';
+var assert = require('chai').assert;
 
 let s = {
   "id": 595209,
@@ -17,4 +18,10 @@ let s = {
   }]
 }
 
-console.log(ProtocolsIOValidator.validate(s, Step));
+describe('Step validator', function() {
+    describe('#validate()', function() {
+	it('should return no errors when a valid step object is passed in', function() {
+	    assert.lengthOf((ProtocolsIOValidator.validate(s, Step))['errors'], 0);
+	});
+    });
+});
