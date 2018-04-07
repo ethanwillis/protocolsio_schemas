@@ -1,5 +1,6 @@
 import { ProtocolsIOValidator } from './ProtocolsIOValidator'
 import { Comment } from '../schemas/Comment';
+var assert = require('chai').assert;
 
 let c1 = {
   "id": 16620,
@@ -62,5 +63,13 @@ let c2 = {
   ]
 };
 
-console.log(ProtocolsIOValidator.validate(c1, Comment));
-console.log(ProtocolsIOValidator.validate(c2, Comment));
+describe('Comment validator', function() {
+    describe('#validate()', function() {
+	it('should return no errors when a valid object without threaded comments is passed in', function() {
+	    assert.lengthOf((ProtocolsIOValidator.validate(c1, Comment))['errors'], 0);
+	});
+	it('should return no errors when a valid object with threaded comments is passed in', function() {
+	    assert.lengthOf((ProtocolsIOValidator.validate(c2, Comment))['errors'], 0);
+	});
+    });
+});

@@ -1,5 +1,6 @@
 import { ProtocolsIOValidator } from './ProtocolsIOValidator'
 import { Protocol } from '../schemas/Protocol';
+var assert = require('chai').assert;
 
 let p = {
   "id": 872,
@@ -98,4 +99,10 @@ let p = {
   ]
 }
 
-console.log(ProtocolsIOValidator.validate(p, Protocol));
+describe('Protocol validator', function() {
+    describe('#validate()', function() {
+	it('should return no errors when a valid protocol object is passed in', function() {
+	    assert.lengthOf((ProtocolsIOValidator.validate(p, Protocol))['errors'], 0);
+	});
+    });
+});
