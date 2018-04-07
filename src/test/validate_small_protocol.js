@@ -1,5 +1,6 @@
 import { ProtocolsIOValidator } from './ProtocolsIOValidator'
 import { SmallProtocol } from '../schemas/SmallProtocol';
+var assert = require('chai').assert;
 
 let sp = {
   "id": 8503,
@@ -14,4 +15,10 @@ let sp = {
   "published_on": 1509493090
 }
 
-console.log(ProtocolsIOValidator.validate(sp, SmallProtocol));
+describe('Small Protocol validator', function() {
+    describe('#validate()', function() {
+	it('should return no errors when a valid small protocol object is passed in', function() {
+	    assert.lengthOf((ProtocolsIOValidator.validate(sp, SmallProtocol))['errors'], 0);
+	});
+    });
+});
