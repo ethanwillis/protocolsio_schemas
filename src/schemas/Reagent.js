@@ -37,7 +37,7 @@ let Reagent = {
 	},
 	"required": [
 		"id", "mol_weight", "name",
-		"linfor", "url", "sky",
+		"linfor", "url", "sku",
 		"vendor"
 	]
 }
