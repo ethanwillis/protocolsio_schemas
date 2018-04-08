@@ -34,7 +34,12 @@ let SmallProtocol = {
 			"description": "unix timestamp. date/time when this protocol was published.",
 			"type": ["integer", "null"]
 		}
-	}
+	},
+	"isRequired": [
+		"id", "title", "image",
+		"version_id", "doi", "uri",
+		"published_on"
+	]
 }
 
 export { SmallProtocol }

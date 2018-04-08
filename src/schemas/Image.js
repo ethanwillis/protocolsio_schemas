@@ -12,7 +12,11 @@ let Image = {
 			"description": "link to the image placeholder or original image link of placeholder is not exist",
 			"type": ["string", "null"]
 		}
-	}
+	},
+	"isRequired": [
+		"source",
+		"placeholder"
+	]
 }
 
 export { Image }

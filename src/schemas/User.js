@@ -26,7 +26,11 @@ let User = {
 			"description": "user profile image",
 			"$ref": "./Image"
 		}
-	}
+	},
+	"isRequired": [
+		"name", "affiliation", "username",
+		"link", "image"
+	]
 }
 
 export { User }

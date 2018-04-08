@@ -92,7 +92,12 @@ let StepComponent = {
 				}
 			]
 		}
-	}
+	},
+	"isRequired": [
+		"id", "guid", "order_id",
+		"order_id", "type_id", "title",
+		"source"
+	]
 }
 
 export { StepComponent }

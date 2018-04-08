@@ -33,7 +33,11 @@ let Step = {
 				"$ref": "./StepComponent"
 			}
 		}
-	}
+	},
+	"isRequired": [
+		"id", "guid", "previous_id",
+		"previous_guid", "modified_on", "components"
+	]
 }
 
 export { Step }

@@ -18,7 +18,10 @@ let StepComponentType1 = {
 			"description": "html",
 			"type": "string"
 		}
-	}
+	},
+	"isRequired": [
+		"description"
+	]
 }
 
 // "Amount" Type: A quantity of something, typically the total of a reagent, size, value etc.
@@ -40,7 +43,12 @@ let StepComponentType3 = {
 			"description": "title of amount.",
 			"type": "string"
 		}
-	}
+	},
+	"isRequired": [
+		"amount",
+		"unit",
+		"title"
+	]
 }
 
 // "Duration" Type
@@ -58,7 +66,11 @@ let StepComponentType4 = {
 			"description": "title of amount.",
 			"type": "string"
 		}
-	}
+	},
+	"isRequired": [
+		"duration",
+		"title"
+	]
 }
 
 // "Title" Type
@@ -72,7 +84,10 @@ let StepComponentType6 = {
 			"description": "title of step.",
 			"type": "string"
 		}
-	}
+	},
+	"isRequired": [
+		"title"
+	]
 }
 
 // "Link" Type
@@ -86,7 +101,10 @@ let StepComponentType7 = {
 			"description": "external url.",
 			"type": "string"
 		}
-	}
+	},
+	"isRequired": [
+		"link"
+	]
 }
 
 // "Software Package" Type
@@ -120,7 +138,11 @@ let StepComponentType8 = {
 			"description": "version of operating system.",
 			"type": "string"
 		}
-	}
+	},
+	"isRequired": [
+		"name", "developer", "repository",
+		"link", "os_name", "os_version"
+	]
 }
 
 // "Dataset Package" Type
@@ -138,7 +160,11 @@ let StepComponentType9 = {
 			"description": "external url.",
 			"type": "string"
 		}
-	}
+	},
+	"isRequired": [
+		"name",
+		"link"
+	]
 }
 
 // "Comment" Type
@@ -173,7 +199,11 @@ let StepComponentType15 = {
 			"description": "version of operating system.",
 			"type": "string"
 		}
-	}
+	},
+	"isRequired": [
+		"name", "command", "os_name",
+		"os_version"
+	]
 }
 
 // "Expected Result" Type
@@ -187,7 +217,10 @@ let StepComponentType17 = {
 			"description": "body can contain html tags.",
 			"type": "string"
 		}
-	}
+	},
+	"isRequired": [
+		"body"
+	]
 }
 
 // "Protocol" Type
@@ -214,7 +247,11 @@ let StepComponentType19 = {
 			"description": "external url.",
 			"type": "string"
 		}
-	}
+	},
+	"isRequired": [
+		"body",
+		"link"
+	]
 }
 
 // "Reagent" Type
@@ -240,7 +277,10 @@ let StepComponentType21 = {
 				"$ref": "./Case"
 			}
 		}
-	}
+	},
+	"isRequired": [
+		"cases"
+	]
 }
 
 // "Go To Previous Step" Type
@@ -258,7 +298,11 @@ let StepComponentType22 = {
 			"description": "linked step guid.",
 			"type": "string"
 		}
-	}
+	},
+	"isRequired": [
+		"title",
+		"step_guid"
+	]
 }
 
 // "Temperature" Type
@@ -280,7 +324,12 @@ let StepComponentType24 = {
 			"description": "title of component.",
 			"type": "string"
 		}
-	}
+	},
+	"isRequired": [
+		"temperature",
+		"unit",
+		"title"
+	]
 }
 
 // "Concentration" Type
@@ -302,7 +351,12 @@ let StepComponentType25 = {
 			"title": "title of concentration.",
 			"type": "string"
 		}
-	}
+	},
+	"isRequired": [
+		"concentration",
+		"unit",
+		"title"
+	]
 }
 
 // "Note" Type

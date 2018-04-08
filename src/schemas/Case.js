@@ -21,7 +21,10 @@ let Case = {
 			"type": ["string", "null"]
 		}
 	},
-	"isRequired": ["title", "label", "step_id", "step_guid"]
+	"isRequired": [
+		"title", "label", "step_id",
+		"step_guid"
+	]
 }
 
 export { Case }

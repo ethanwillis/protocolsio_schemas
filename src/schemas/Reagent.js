@@ -34,7 +34,12 @@ let Reagent = {
 			"description": "reagent vendor.",
 			"$ref": "./User"
 		}
-	}
+	},
+	"isRequired": [
+		"id", "mol_weight", "name",
+		"linfor", "url", "sky",
+		"vendor"
+	]
 }
 
 export { Reagent }
