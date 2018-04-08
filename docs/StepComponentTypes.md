@@ -23,12 +23,14 @@ Documented below is each of the possible Step Component Types. These are used to
 
 ### Type 1 (Description)
 Description of a step. Can contain HTML tags.
+
 | property | type | description |
 |----|---|---|
 | description | string | text/html |
 
 ### Type 3 (Amount)
 A quantity of something, typically the total of a reagent, size, value etc.
+
 | property | type | description |
 |----|---|---|
 | amount | integer | amount quantity. |
