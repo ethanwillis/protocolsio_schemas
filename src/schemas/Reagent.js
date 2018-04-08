@@ -35,7 +35,7 @@ let Reagent = {
 			"$ref": "./User"
 		}
 	},
-	"isRequired": [
+	"required": [
 		"id", "mol_weight", "name",
 		"linfor", "url", "sky",
 		"vendor"

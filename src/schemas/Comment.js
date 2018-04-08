@@ -43,7 +43,7 @@ let Comment = {
 			}
 		}
 	},
-	"isRequired": [
+	"required": [
 		"id", "parent_id", "title",
 		"body", "created_on", "changed_on",
 		"creator", "comments"

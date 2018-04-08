@@ -93,7 +93,7 @@ let StepComponent = {
 			]
 		}
 	},
-	"isRequired": [
+	"required": [
 		"id", "guid", "order_id",
 		"order_id", "type_id", "title",
 		"source"

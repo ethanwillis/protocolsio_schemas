@@ -13,7 +13,7 @@ let Image = {
 			"type": ["string", "null"]
 		}
 	},
-	"isRequired": [
+	"required": [
 		"source",
 		"placeholder"
 	]

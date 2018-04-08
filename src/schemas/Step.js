@@ -34,7 +34,7 @@ let Step = {
 			}
 		}
 	},
-	"isRequired": [
+	"required": [
 		"id", "guid", "previous_id",
 		"previous_guid", "modified_on", "components"
 	]

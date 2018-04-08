@@ -35,7 +35,7 @@ let SmallProtocol = {
 			"type": ["integer", "null"]
 		}
 	},
-	"isRequired": [
+	"required": [
 		"id", "title", "image",
 		"version_id", "doi", "uri",
 		"published_on"

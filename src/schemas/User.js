@@ -27,7 +27,7 @@ let User = {
 			"$ref": "./Image"
 		}
 	},
-	"isRequired": [
+	"required": [
 		"name", "affiliation", "username",
 		"link", "image"
 	]

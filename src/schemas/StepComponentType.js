@@ -19,7 +19,7 @@ let StepComponentType1 = {
 			"type": "string"
 		}
 	},
-	"isRequired": [
+	"required": [
 		"description"
 	]
 }
@@ -44,7 +44,7 @@ let StepComponentType3 = {
 			"type": "string"
 		}
 	},
-	"isRequired": [
+	"required": [
 		"amount",
 		"unit",
 		"title"
@@ -67,7 +67,7 @@ let StepComponentType4 = {
 			"type": "string"
 		}
 	},
-	"isRequired": [
+	"required": [
 		"duration",
 		"title"
 	]
@@ -85,7 +85,7 @@ let StepComponentType6 = {
 			"type": "string"
 		}
 	},
-	"isRequired": [
+	"required": [
 		"title"
 	]
 }
@@ -102,7 +102,7 @@ let StepComponentType7 = {
 			"type": "string"
 		}
 	},
-	"isRequired": [
+	"required": [
 		"link"
 	]
 }
@@ -139,7 +139,7 @@ let StepComponentType8 = {
 			"type": "string"
 		}
 	},
-	"isRequired": [
+	"required": [
 		"name", "developer", "repository",
 		"link", "os_name", "os_version"
 	]
@@ -161,7 +161,7 @@ let StepComponentType9 = {
 			"type": "string"
 		}
 	},
-	"isRequired": [
+	"required": [
 		"name",
 		"link"
 	]
@@ -200,7 +200,7 @@ let StepComponentType15 = {
 			"type": "string"
 		}
 	},
-	"isRequired": [
+	"required": [
 		"name", "command", "os_name",
 		"os_version"
 	]
@@ -218,7 +218,7 @@ let StepComponentType17 = {
 			"type": "string"
 		}
 	},
-	"isRequired": [
+	"required": [
 		"body"
 	]
 }
@@ -248,7 +248,7 @@ let StepComponentType19 = {
 			"type": "string"
 		}
 	},
-	"isRequired": [
+	"required": [
 		"body",
 		"link"
 	]
@@ -278,7 +278,7 @@ let StepComponentType21 = {
 			}
 		}
 	},
-	"isRequired": [
+	"required": [
 		"cases"
 	]
 }
@@ -299,7 +299,7 @@ let StepComponentType22 = {
 			"type": "string"
 		}
 	},
-	"isRequired": [
+	"required": [
 		"title",
 		"step_guid"
 	]
@@ -325,7 +325,7 @@ let StepComponentType24 = {
 			"type": "string"
 		}
 	},
-	"isRequired": [
+	"required": [
 		"temperature",
 		"unit",
 		"title"
@@ -352,7 +352,7 @@ let StepComponentType25 = {
 			"type": "string"
 		}
 	},
-	"isRequired": [
+	"required": [
 		"concentration",
 		"unit",
 		"title"
