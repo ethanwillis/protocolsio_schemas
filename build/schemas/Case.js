@@ -15,17 +15,18 @@ var Case = {
 		},
 		"label": {
 			"description": "label of a case.",
-			"type": "string"
+			"type": ["string", "null"]
 		},
 		"step_id": {
 			"description": "linked step id.",
-			"type": "integer"
+			"type": ["integer", "null"]
 		},
 		"step_guid": {
 			"description": "linked step guid.",
-			"type": "string"
+			"type": ["string", "null"]
 		}
-	}
+	},
+	"required": ["title", "label", "step_id", "step_guid"]
 };
 
 exports.Case = Case;

@@ -135,8 +135,7 @@ var sct18_valid = {
     "components": [{
       "id": 1023444,
       "guid": "A38362CBC954458FB069F821B6526B38",
-      "previous_id": 1023443,
-      "previous_guid": "1EBCBC24EFCF429F8F34D7099EF6211E",
+      "order_id": 1023443,
       "type_id": 3,
       "title": "Amount",
       "source": {
@@ -247,25 +246,94 @@ var sct26_valid = {
 
 };describe('Step Component Type validator', function () {
   describe('#validate()', function () {
-    it('should return no errors when any valid step component type object is passed in', function () {
-      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(sct1_valid, _StepComponentType.StepComponentType1)['errors'], 0);
-      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(sct3_valid, _StepComponentType.StepComponentType3)['errors'], 0);
-      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(sct4_valid, _StepComponentType.StepComponentType4)['errors'], 0);
-      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(sct6_valid, _StepComponentType.StepComponentType6)['errors'], 0);
-      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(sct7_valid, _StepComponentType.StepComponentType7)['errors'], 0);
-      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(sct8_valid, _StepComponentType.StepComponentType8)['errors'], 0);
-      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(sct9_valid, _StepComponentType.StepComponentType9)['errors'], 0);
-      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(sct13_valid, _StepComponentType.StepComponentType13)['errors'], 0);
-      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(sct15_valid, _StepComponentType.StepComponentType15)['errors'], 0);
-      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(sct17_valid, _StepComponentType.StepComponentType17)['errors'], 0);
-      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(sct18_valid, _StepComponentType.StepComponentType18)['errors'], 0);
-      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(sct19_valid, _StepComponentType.StepComponentType19)['errors'], 0);
-      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(sct20_valid, _StepComponentType.StepComponentType20)['errors'], 0);
-      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(sct21_valid, _StepComponentType.StepComponentType21)['errors'], 0);
-      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(sct22_valid, _StepComponentType.StepComponentType22)['errors'], 0);
-      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(sct24_valid, _StepComponentType.StepComponentType24)['errors'], 0);
-      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(sct25_valid, _StepComponentType.StepComponentType25)['errors'], 0);
-      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(sct26_valid, _StepComponentType.StepComponentType26)['errors'], 0);
+    it('should return no errors for step component type 1', function () {
+      var validator_result = _ProtocolsIOValidator.ProtocolsIOValidator.validate(sct1_valid, _StepComponentType.StepComponentType1);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
+    });
+
+    it('should return no errors for step component type 3', function () {
+      var validator_result = _ProtocolsIOValidator.ProtocolsIOValidator.validate(sct3_valid, _StepComponentType.StepComponentType3);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
+    });
+
+    it('should return no errors for step component type 4', function () {
+      var validator_result = _ProtocolsIOValidator.ProtocolsIOValidator.validate(sct4_valid, _StepComponentType.StepComponentType4);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
+    });
+
+    it('should return no errors for step component type 6', function () {
+      var validator_result = _ProtocolsIOValidator.ProtocolsIOValidator.validate(sct6_valid, _StepComponentType.StepComponentType6);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
+    });
+
+    it('should return no errors for step component type 7', function () {
+      var validator_result = _ProtocolsIOValidator.ProtocolsIOValidator.validate(sct7_valid, _StepComponentType.StepComponentType7);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
+    });
+
+    it('should return no errors for step component type 8', function () {
+      var validator_result = _ProtocolsIOValidator.ProtocolsIOValidator.validate(sct8_valid, _StepComponentType.StepComponentType8);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
+    });
+
+    it('should return no errors for step component type 9', function () {
+      var validator_result = _ProtocolsIOValidator.ProtocolsIOValidator.validate(sct9_valid, _StepComponentType.StepComponentType9);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
+    });
+
+    it('should return no errors for step component type 13', function () {
+      var validator_result = _ProtocolsIOValidator.ProtocolsIOValidator.validate(sct13_valid, _StepComponentType.StepComponentType13);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
+    });
+
+    it('should return no errors for step component type 15', function () {
+      var validator_result = _ProtocolsIOValidator.ProtocolsIOValidator.validate(sct15_valid, _StepComponentType.StepComponentType15);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
+    });
+
+    it('should return no errors for step component type 17', function () {
+      var validator_result = _ProtocolsIOValidator.ProtocolsIOValidator.validate(sct17_valid, _StepComponentType.StepComponentType17);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
+    });
+
+    it('should return no errors for step component type 18', function () {
+      var validator_result = _ProtocolsIOValidator.ProtocolsIOValidator.validate(sct18_valid, _StepComponentType.StepComponentType18);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
+    });
+
+    it('should return no errors for step component type 1', function () {
+      var validator_result = _ProtocolsIOValidator.ProtocolsIOValidator.validate(sct19_valid, _StepComponentType.StepComponentType19);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
+    });
+
+    it('should return no errors for step component type 20', function () {
+      var validator_result = _ProtocolsIOValidator.ProtocolsIOValidator.validate(sct20_valid, _StepComponentType.StepComponentType20);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
+    });
+
+    it('should return no errors for step component type 21', function () {
+      var validator_result = _ProtocolsIOValidator.ProtocolsIOValidator.validate(sct21_valid, _StepComponentType.StepComponentType21);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
+    });
+
+    it('should return no errors for step component type 22', function () {
+      var validator_result = _ProtocolsIOValidator.ProtocolsIOValidator.validate(sct22_valid, _StepComponentType.StepComponentType22);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
+    });
+
+    it('should return no errors for step component type 24', function () {
+      var validator_result = _ProtocolsIOValidator.ProtocolsIOValidator.validate(sct24_valid, _StepComponentType.StepComponentType24);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
+    });
+
+    it('should return no errors for step component type 25', function () {
+      var validator_result = _ProtocolsIOValidator.ProtocolsIOValidator.validate(sct25_valid, _StepComponentType.StepComponentType25);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
+    });
+
+    it('should return no errors for step component type 26', function () {
+      var validator_result = _ProtocolsIOValidator.ProtocolsIOValidator.validate(sct26_valid, _StepComponentType.StepComponentType26);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
     });
   });
 });

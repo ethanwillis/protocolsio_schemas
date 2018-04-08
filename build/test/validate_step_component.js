@@ -14,7 +14,7 @@ var assert = require('chai').assert;
 var sc1_valid = {
   "id": 1023444,
   "guid": "A38362CBC954458FB069F821B6526B38",
-  "previous_id": 1023443,
+  "order_id": 1,
   "previous_guid": "1EBCBC24EFCF429F8F34D7099EF6211E",
   "type_id": 1,
   "title": "Description",
@@ -26,7 +26,7 @@ var sc1_valid = {
 var sc2_valid = {
   "id": 1023444,
   "guid": "A38362CBC954458FB069F821B6526B38",
-  "previous_id": 1023443,
+  "order_id": 2,
   "previous_guid": "1EBCBC24EFCF429F8F34D7099EF6211E",
   "type_id": 3,
   "title": "Amount",
@@ -40,10 +40,13 @@ var sc2_valid = {
 describe('Step Component validator', function () {
   describe('#validate', function () {
     it('should return no errors when a step component object with a source containing a description is passed in', function () {
-      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(sc1_valid, _StepComponent.StepComponent)['errors'], 0);
+      var validator_result = _ProtocolsIOValidator.ProtocolsIOValidator.validate(sc1_valid, _StepComponent.StepComponent);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
     });
+
     it('should return no errors when a step component object with a source containing other things is passed in', function () {
-      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(sc2_valid, _StepComponent.StepComponent)['errors'], 0);
+      var validator_result = _ProtocolsIOValidator.ProtocolsIOValidator.validate(sc2_valid, _StepComponent.StepComponent);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
     });
   });
 });

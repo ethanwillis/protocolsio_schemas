@@ -13,7 +13,7 @@ var User = {
 	"properties": {
 		"name": {
 			"description": "user full name",
-			"type": "string"
+			"type": ["string", "null"]
 		},
 		"affiliation": {
 			"description": "user affiliation",
@@ -31,7 +31,8 @@ var User = {
 			"description": "user profile image",
 			"$ref": "./Image"
 		}
-	}
+	},
+	"required": ["name", "affiliation", "username", "link", "image"]
 };
 
 exports.User = User;

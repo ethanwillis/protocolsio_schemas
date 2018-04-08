@@ -6,7 +6,7 @@ var _Protocol = require('../schemas/Protocol');
 
 var assert = require('chai').assert;
 
-var p = {
+var p1_valid = {
   "id": 872,
   "title": "Lysis Buffer (20 mL)",
   "image": {
@@ -62,8 +62,7 @@ var p = {
     "components": [{
       "id": 1023444,
       "guid": "A38362CBC954458FB069F821B6526B38",
-      "previous_id": 1023443,
-      "previous_guid": "1EBCBC24EFCF429F8F34D7099EF6211E",
+      "order_id": 1023443,
       "type_id": 3,
       "title": "Amount",
       "source": {
@@ -96,7 +95,8 @@ var p = {
 describe('Protocol validator', function () {
   describe('#validate()', function () {
     it('should return no errors when a valid protocol object is passed in', function () {
-      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(p, _Protocol.Protocol)['errors'], 0);
+      var validator_result = _ProtocolsIOValidator.ProtocolsIOValidator.validate(p1_valid, _Protocol.Protocol);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
     });
   });
 });

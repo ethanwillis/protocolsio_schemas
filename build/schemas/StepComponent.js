@@ -78,7 +78,8 @@ var StepComponent = {
 				"$ref": "./StepComponentType26"
 			}]
 		}
-	}
+	},
+	"required": ["id", "guid", "order_id", "order_id", "type_id", "title", "source"]
 };
 
 exports.StepComponent = StepComponent;

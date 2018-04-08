@@ -47,7 +47,8 @@ var Comment = {
 				"$ref": "./Comment"
 			}
 		}
-	}
+	},
+	"required": ["id", "parent_id", "title", "body", "created_on", "changed_on", "creator", "comments"]
 };
 
 exports.Comment = Comment;

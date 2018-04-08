@@ -39,7 +39,8 @@ var Reagent = {
 			"description": "reagent vendor.",
 			"$ref": "./User"
 		}
-	}
+	},
+	"required": ["id", "mol_weight", "name", "linfor", "url", "sku", "vendor"]
 };
 
 exports.Reagent = Reagent;

@@ -22,7 +22,8 @@ var StepComponentType1 = {
 			"description": "html",
 			"type": "string"
 		}
-	}
+	},
+	"required": ["description"]
 
 	// "Amount" Type: A quantity of something, typically the total of a reagent, size, value etc.
 }; // Depends on { Case }
@@ -48,7 +49,8 @@ var StepComponentType3 = {
 			"description": "title of amount.",
 			"type": "string"
 		}
-	}
+	},
+	"required": ["amount", "unit", "title"]
 
 	// "Duration" Type
 };var StepComponentType4 = {
@@ -65,7 +67,8 @@ var StepComponentType3 = {
 			"description": "title of amount.",
 			"type": "string"
 		}
-	}
+	},
+	"required": ["duration", "title"]
 
 	// "Title" Type
 };var StepComponentType6 = {
@@ -78,7 +81,8 @@ var StepComponentType3 = {
 			"description": "title of step.",
 			"type": "string"
 		}
-	}
+	},
+	"required": ["title"]
 
 	// "Link" Type
 };var StepComponentType7 = {
@@ -91,7 +95,8 @@ var StepComponentType3 = {
 			"description": "external url.",
 			"type": "string"
 		}
-	}
+	},
+	"required": ["link"]
 
 	// "Software Package" Type
 };var StepComponentType8 = {
@@ -124,7 +129,8 @@ var StepComponentType3 = {
 			"description": "version of operating system.",
 			"type": "string"
 		}
-	}
+	},
+	"required": ["name", "developer", "repository", "link", "os_name", "os_version"]
 
 	// "Dataset Package" Type
 };var StepComponentType9 = {
@@ -141,7 +147,8 @@ var StepComponentType3 = {
 			"description": "external url.",
 			"type": "string"
 		}
-	}
+	},
+	"required": ["name", "link"]
 
 	// "Comment" Type
 };var StepComponentType13 = {
@@ -174,7 +181,8 @@ var StepComponentType3 = {
 			"description": "version of operating system.",
 			"type": "string"
 		}
-	}
+	},
+	"required": ["name", "command", "os_name", "os_version"]
 
 	// "Expected Result" Type
 };var StepComponentType17 = {
@@ -187,7 +195,8 @@ var StepComponentType3 = {
 			"description": "body can contain html tags.",
 			"type": "string"
 		}
-	}
+	},
+	"required": ["body"]
 
 	// "Protocol" Type
 };var StepComponentType18 = {
@@ -209,10 +218,11 @@ var StepComponentType3 = {
 			"type": "string"
 		},
 		"link": {
-			"description": "exteneral url.",
+			"description": "external url.",
 			"type": "string"
 		}
-	}
+	},
+	"required": ["body", "link"]
 
 	// "Reagent" Type
 };var StepComponentType20 = {
@@ -236,7 +246,8 @@ var StepComponentType3 = {
 				"$ref": "./Case"
 			}
 		}
-	}
+	},
+	"required": ["cases"]
 
 	// "Go To Previous Step" Type
 };var StepComponentType22 = {
@@ -253,7 +264,8 @@ var StepComponentType3 = {
 			"description": "linked step guid.",
 			"type": "string"
 		}
-	}
+	},
+	"required": ["title", "step_guid"]
 
 	// "Temperature" Type
 };var StepComponentType24 = {
@@ -274,7 +286,8 @@ var StepComponentType3 = {
 			"description": "title of component.",
 			"type": "string"
 		}
-	}
+	},
+	"required": ["temperature", "unit", "title"]
 
 	// "Concentration" Type
 };var StepComponentType25 = {
@@ -295,7 +308,8 @@ var StepComponentType3 = {
 			"title": "title of concentration.",
 			"type": "string"
 		}
-	}
+	},
+	"required": ["concentration", "unit", "title"]
 
 	// "Note" Type
 };var StepComponentType26 = {
