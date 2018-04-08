@@ -2,7 +2,7 @@ import { ProtocolsIOValidator } from './ProtocolsIOValidator'
 import { Comment } from '../schemas/Comment';
 var assert = require('chai').assert;
 
-let c1 = {
+let c1_valid = {
   "id": 16620,
   "parent_id": 0,
   "uri": "comment-on-step-1-of-untitled-protocol1",
@@ -19,10 +19,11 @@ let c1 = {
       "source": "/img/avatars/005.png",
       "placeholder": "/img/avatars/005.png"
     }
-  }
+  },
+  "comments": []
 };
 
-let c2 = {
+let c2_valid = {
   "id": 16620,
   "parent_id": 0,
   "uri": "comment-on-step-1-of-untitled-protocol1",
@@ -58,7 +59,8 @@ let c2 = {
           "source": "/img/avatars/005.png",
           "placeholder": "/img/avatars/005.png"
         }
-      }
+      },
+      "comments": []
     }
   ]
 };
@@ -66,10 +68,12 @@ let c2 = {
 describe('Comment validator', function() {
     describe('#validate()', function() {
 	it('should return no errors when a valid object without threaded comments is passed in', function() {
-	    assert.lengthOf((ProtocolsIOValidator.validate(c1, Comment))['errors'], 0);
+      let validator_result = ProtocolsIOValidator.validate(c1_valid, Comment);
+	    assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
 	});
 	it('should return no errors when a valid object with threaded comments is passed in', function() {
-	    assert.lengthOf((ProtocolsIOValidator.validate(c2, Comment))['errors'], 0);
+      let validator_result = ProtocolsIOValidator.validate(c2_valid, Comment)
+	    assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
 	});
     });
 });
