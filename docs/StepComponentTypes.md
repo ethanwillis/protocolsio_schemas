@@ -1,5 +1,5 @@
 # Step Component types
-Documented below is each of the possible Step Component Types. These are used to embed various types of objects within a Step within a Protocol. 
+Documented below is each of the possible Step Component Types. These are used to embed various types of objects within a Step within a Protocol.
 
 - Types
   - [Type 1 (Description)](#type-1-description)
@@ -96,6 +96,7 @@ Same as [Comment](../README.md#comment) object type
 
 ### Type 18 (Protocol)
 Same as [Protocol](../README.md#protocol) object type
+
 | property | type | description |
 |----|---|---|
 | id | integer | unique protocol integer identifier. |
@@ -123,6 +124,7 @@ Same as [Protocol](../README.md#protocol) object type
 
 ### Type 20 (Reagent)
 Same as [Reagent](../README.md#reagent) object type
+
 | property | type | description |
 |----|---|---|
 | id | integer | unique reagent integer identifier. |
@@ -160,6 +162,7 @@ Same as [Reagent](../README.md#reagent) object type
 
 ### Type 26 (Note)
 Same as [Comment](../README.md#comment) object type.
+
 | property | type | description |
 |----|---|---|
 | id | integer | unique comment integer identifier. |
