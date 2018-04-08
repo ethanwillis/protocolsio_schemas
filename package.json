@@ -5,7 +5,7 @@
   "main": "build/index.js",
   "scripts": {
     "test": "mocha",
-    "build": "babel ./src/schemas --out-dir build/schemas && babel ./src/test --out-dir build/test && babel ./src/index.js --out-file build/index.js"
+    "build": "babel ./src/schemas --out-dir build/schemas && babel ./src/test --out-dir build/test"
   },
   "repository": {
     "type": "git",

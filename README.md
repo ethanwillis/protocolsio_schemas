@@ -31,16 +31,14 @@ npm install --save protocolsio-schemas
 ```javascript
 import { ProtocolsIOValidator, User } from 'protocolsio-schemas'
 let u = {
-    "user": {
-      "name": "Vladimir Frolov",
-      "affiliation": null,
-      "username": "vladimir-frolov10",
-      "link": null,
-      "image": {
-        "source": "https://s3.amazonaws.com/pr-journal/djqbjf6.jpg",
-        "placeholder": "https://s3.amazonaws.com/pr-journal/djqbjf6.jpg"
-      }
-    }
+  "name": "Vladimir Frolov",
+  "affiliation": null,
+  "username": "vladimir-frolov10",
+  "link": null,
+  "image": {
+    "source": "https://s3.amazonaws.com/pr-journal/djqbjf6.jpg",
+    "placeholder": "https://s3.amazonaws.com/pr-journal/djqbjf6.jpg"
+  }
 }
 
 console.log(ProtocolsIOValidator.validate(u, User))
@@ -158,16 +156,14 @@ Following is an example of constructing and validating a Protocols.io User objec
 ```javascript
 import { ProtocolsIOValidator, User } from 'protocolsio-schemas'
 let u = {
-    "user": {
-      "name": "Vladimir Frolov",
-      "affiliation": null,
-      "username": "vladimir-frolov10",
-      "link": null,
-      "image": {
-        "source": "https://s3.amazonaws.com/pr-journal/djqbjf6.jpg",
-        "placeholder": "https://s3.amazonaws.com/pr-journal/djqbjf6.jpg"
-      }
-    }
+  "name": "Vladimir Frolov",
+  "affiliation": null,
+  "username": "vladimir-frolov10",
+  "link": null,
+  "image": {
+    "source": "https://s3.amazonaws.com/pr-journal/djqbjf6.jpg",
+    "placeholder": "https://s3.amazonaws.com/pr-journal/djqbjf6.jpg"
+  }
 }
 
 console.log(ProtocolsIOValidator.validate(u, User))
