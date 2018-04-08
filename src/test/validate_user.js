@@ -2,7 +2,7 @@ import { ProtocolsIOValidator } from './ProtocolsIOValidator'
 import { User } from '../schemas/User';
 var assert = require('chai').assert;
 
-let u = {
+let u1_valid = {
     "user": {
       "name": "Vladimir Frolov",
       "affiliation": null,
@@ -17,8 +17,8 @@ let u = {
 
 describe('User validator', function() {
     describe('#validate()', function() {
-	it('should return no errors when a valid user object is passed in', function() {
-	    assert.lengthOf((ProtocolsIOValidator.validate(u, User))['errors'], 0);
-	});
+    	it('should return no errors when a valid user object is passed in', function() {
+    	    assert.lengthOf((ProtocolsIOValidator.validate(u1_valid, User))['errors'], 0);
+    	});
     });
 });
