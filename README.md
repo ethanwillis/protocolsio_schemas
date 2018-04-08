@@ -6,6 +6,7 @@ View the NPM page [here](https://www.npmjs.com/package/protocolsio-schemas)
 ## Index
 - [Installation](#installation)
 - [Quick Start](#quick-start)
+- [Available Imports](#available-imports)
 - [Objects](#objects)
   - [User](#user)
   - [Image](#image)
@@ -44,6 +45,24 @@ let u = {
 console.log(ProtocolsIOValidator.validate(u, User))
 ```
 
+# Available Imports
+Import any object from the protocolsio-schema package using its object name.
+
+```javascript
+import {
+  User, Image, Reagent,
+  Comment, SmallProtocol, Protocol,
+  Step, StepComponent, Case,
+  StepComponentType1, StepComponentType3, StepComponentType4,
+  StepComponentType6, StepComponentType7, StepComponentType8,
+  StepComponentType9, StepComponentType13, StepComponentType15,
+  StepComponentType17, StepComponentType18, StepComponentType19,
+  StepComponentType20, StepComponentType21, StepComponentType22,
+  StepComponentType24, StepComponentType25, StepComponentType26,
+} from 'protocolsio-schema'
+```
+
+
 # Objects
 **Note**: Under guidance from the Protocols.IO API developer the following fields are currently the only ones that can be confidently said to never be null: id, title, uri, and created_on. Code your checks around this appropriately.
 
@@ -55,6 +74,7 @@ console.log(ProtocolsIOValidator.validate(u, User))
 | username | string OR null | username |
 | link | string OR null | external url. |
 | image | [Image](#image) | user profile image |
+
 
 ## Image
 | property | type | description |
