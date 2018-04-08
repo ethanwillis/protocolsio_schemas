@@ -2,7 +2,7 @@ import { ProtocolsIOValidator } from './ProtocolsIOValidator'
 import { SmallProtocol } from '../schemas/SmallProtocol';
 var assert = require('chai').assert;
 
-let sp = {
+let sp1_valid = {
   "id": 8503,
   "title": "Gene calling with Prodigal",
   "image": {
@@ -18,7 +18,8 @@ let sp = {
 describe('Small Protocol validator', function() {
     describe('#validate()', function() {
 	it('should return no errors when a valid small protocol object is passed in', function() {
-	    assert.lengthOf((ProtocolsIOValidator.validate(sp, SmallProtocol))['errors'], 0);
+    let validator_result = ProtocolsIOValidator.validate(sp1_valid, SmallProtocol);
+    assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
 	});
     });
 });
