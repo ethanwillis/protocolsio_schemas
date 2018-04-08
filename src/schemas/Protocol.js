@@ -55,6 +55,10 @@ let Protocol = {
 			"description": "0...n. Version number of this protocol.",
 			"type": "integer"
 		},
+		"link": {
+			"description": "Link to this protocol.",
+			"type": "string"
+		},
 		"number_of_steps": {
 			"description": "number of steps of this protocol.",
 			"type": ["integer", "null"]
@@ -81,7 +85,13 @@ let Protocol = {
 			}
 		}
 	},
-	"required": ["id", "title", "image", "doi", "uri", "published_on", "created_on", "creator", "public", "versions", "version_id", "number_of_steps", "authors"]
+	"required": [
+		"id", "title", "image",
+		"doi", "uri", "published_on",
+		"created_on", "creator", "public",
+		"versions", "version_id", "link",
+		"number_of_steps", "authors"
+	]
 }
 
 export { Protocol }

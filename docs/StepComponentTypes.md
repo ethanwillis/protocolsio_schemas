@@ -109,6 +109,7 @@ Same as [Protocol](../README.md#protocol) object type
 | public | integer | 1 or 0. 1 means that this protocol is public and 0 otherwise. |
 | versions | Array<[SmallProtocol](../README.md#small-protocol)> | list of versions |
 | version_id | integer | 0...n. Version number of this protocol. |
+| link | string | Link to this protocol. |
 | number_of_steps | integer OR null | number of steps of this protocol. |
 | authors | Array<[User](../README.md#user)> | list of user or empty array |
 | steps | Array<[Step](../README.md#step)> | All of the steps in this protocol. |

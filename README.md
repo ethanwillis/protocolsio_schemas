@@ -113,6 +113,7 @@ console.log(ProtocolsIOValidator.validate(u, User))
 | public | integer | 1 or 0. 1 means that this protocol is public and 0 otherwise. |
 | versions | Array<[SmallProtocol](#small-protocol)> | list of versions |
 | version_id | integer | 0...n. Version number of this protocol. |
+| link | string | Link to this protocol. |
 | number_of_steps | integer OR null | number of steps of this protocol. |
 | authors | Array<[User](#user)> | list of user or empty array |
 | steps | Array<[Step](#step)> | All of the steps in this protocol. |
