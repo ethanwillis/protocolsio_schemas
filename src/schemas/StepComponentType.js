@@ -211,7 +211,7 @@ let StepComponentType19 = {
 			"type": "string"
 		},
 		"link": {
-			"description": "exteneral url.",
+			"description": "external url.",
 			"type": "string"
 		}
 	}
