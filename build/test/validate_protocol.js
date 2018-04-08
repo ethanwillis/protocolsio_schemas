@@ -4,6 +4,8 @@ var _ProtocolsIOValidator = require('./ProtocolsIOValidator');
 
 var _Protocol = require('../schemas/Protocol');
 
+var assert = require('chai').assert;
+
 var p = {
   "id": 872,
   "title": "Lysis Buffer (20 mL)",
@@ -91,4 +93,10 @@ var p = {
   }]
 };
 
-console.log(_ProtocolsIOValidator.ProtocolsIOValidator.validate(p, _Protocol.Protocol));
+describe('Protocol validator', function () {
+  describe('#validate()', function () {
+    it('should return no errors when a valid protocol object is passed in', function () {
+      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(p, _Protocol.Protocol)['errors'], 0);
+    });
+  });
+});

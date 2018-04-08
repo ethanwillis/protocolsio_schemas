@@ -4,6 +4,8 @@ var _ProtocolsIOValidator = require('./ProtocolsIOValidator');
 
 var _Step = require('../schemas/Step');
 
+var assert = require('chai').assert;
+
 var s = {
   "id": 595209,
   "guid": "E70FDFE632504ADFB0ED519ABB5449B1",
@@ -20,4 +22,10 @@ var s = {
   }]
 };
 
-console.log(_ProtocolsIOValidator.ProtocolsIOValidator.validate(s, _Step.Step));
+describe('Step validator', function () {
+  describe('#validate()', function () {
+    it('should return no errors when a valid step object is passed in', function () {
+      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(s, _Step.Step)['errors'], 0);
+    });
+  });
+});

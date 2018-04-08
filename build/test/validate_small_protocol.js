@@ -4,6 +4,8 @@ var _ProtocolsIOValidator = require('./ProtocolsIOValidator');
 
 var _SmallProtocol = require('../schemas/SmallProtocol');
 
+var assert = require('chai').assert;
+
 var sp = {
   "id": 8503,
   "title": "Gene calling with Prodigal",
@@ -17,4 +19,10 @@ var sp = {
   "published_on": 1509493090
 };
 
-console.log(_ProtocolsIOValidator.ProtocolsIOValidator.validate(sp, _SmallProtocol.SmallProtocol));
+describe('Small Protocol validator', function () {
+  describe('#validate()', function () {
+    it('should return no errors when a valid small protocol object is passed in', function () {
+      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(sp, _SmallProtocol.SmallProtocol)['errors'], 0);
+    });
+  });
+});
