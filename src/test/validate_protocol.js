@@ -2,7 +2,7 @@ import { ProtocolsIOValidator } from './ProtocolsIOValidator'
 import { Protocol } from '../schemas/Protocol';
 var assert = require('chai').assert;
 
-let p = {
+let p1_valid = {
   "id": 872,
   "title": "Lysis Buffer (20 mL)",
   "image": {
@@ -61,11 +61,10 @@ let p = {
       "previous_guid": null,
       "modified_on": 1517933242,
       "components": [
-	{
+				{
           "id": 1023444,
           "guid": "A38362CBC954458FB069F821B6526B38",
-          "previous_id": 1023443,
-          "previous_guid": "1EBCBC24EFCF429F8F34D7099EF6211E",
+          "order_id": 1023443,
           "type_id": 3,
           "title": "Amount",
           "source": {
@@ -97,12 +96,13 @@ let p = {
       }
     }
   ]
-}
+};
 
 describe('Protocol validator', function() {
-    describe('#validate()', function() {
-	it('should return no errors when a valid protocol object is passed in', function() {
-	    assert.lengthOf((ProtocolsIOValidator.validate(p, Protocol))['errors'], 0);
-	});
-    });
+  describe('#validate()', function() {
+    it('should return no errors when a valid protocol object is passed in', function() {
+      let validator_result = ProtocolsIOValidator.validate(p1_valid, Protocol);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
+	  });
+  });
 });
