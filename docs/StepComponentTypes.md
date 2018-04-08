@@ -1,5 +1,5 @@
 # Step Component types
-TODO
+Documented below is each of the possible Step Component Types. These are used to embed various types of objects within a Step within a Protocol. 
 
 - Types
   - [Type 1 (Description)](#type-1-description)
