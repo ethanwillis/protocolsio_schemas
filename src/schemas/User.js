@@ -24,14 +24,7 @@ let User = {
 		},
 		"image": {
 			"description": "user profile image",
-			"anyOf": [
-				{
-					"$ref": "./Image"
-				},
-				{
-					"type": "null"
-				}
-			]
+			"$ref": "./Image"
 		}
 	}
 }

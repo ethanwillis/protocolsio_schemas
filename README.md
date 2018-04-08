@@ -56,7 +56,7 @@ console.log(ProtocolsIOValidator.validate(u, User))
 | affiliation | string OR null | user affiliation |
 | username | string OR null | username |
 | link | string OR null | external url. |
-| image | [Image](#image) OR null | user profile image |
+| image | [Image](#image) | user profile image |
 
 ## Image
 | property | type | description |
