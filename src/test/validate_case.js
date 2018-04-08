@@ -19,11 +19,13 @@ let c2_valid = {
 describe('User validator', function() {
     describe('#validate()', function() {
     	it('should return no errors when a valid case object is passed in', function() {
-    	    assert.lengthOf((ProtocolsIOValidator.validate(c1_valid, Case))['errors'], 0);
+          let validator_result = ProtocolsIOValidator.validate(c1_valid, Case);
+    	    assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
     	});
 
-      it('should return no errors when a valid case object is passed in with a null image', function() {
-          assert.lengthOf((ProtocolsIOValidator.validate(c2_valid, Case))['errors'], 0);
+      it('should return no errors when a valid case object is passed in with a null values', function() {
+        let validator_result = ProtocolsIOValidator.validate(c2_valid, Case);
+        assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
       });
     });
 });
