@@ -8,7 +8,7 @@ let User = {
 	"properties": {
 		"name": {
 			"description": "user full name",
-			"type": "string"
+			"type": ["string", "null"]
 		},
 		"affiliation": {
 			"description": "user affiliation",
