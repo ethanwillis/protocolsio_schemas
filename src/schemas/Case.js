@@ -20,7 +20,8 @@ let Case = {
 			"description": "linked step guid.",
 			"type": ["string", "null"]
 		}
-	}
+	},
+	"isRequired": ["title", "label", "step_id", "step_guid"]
 }
 
 export { Case }
