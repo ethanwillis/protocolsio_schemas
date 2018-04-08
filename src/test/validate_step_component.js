@@ -10,7 +10,7 @@ var assert = require('chai').assert;
 let sc1_valid = {
   "id": 1023444,
   "guid": "A38362CBC954458FB069F821B6526B38",
-  "previous_id": 1023443,
+  "order_id": 1,
   "previous_guid": "1EBCBC24EFCF429F8F34D7099EF6211E",
   "type_id": 1,
   "title": "Description",
@@ -22,7 +22,7 @@ let sc1_valid = {
 let sc2_valid = {
   "id": 1023444,
   "guid": "A38362CBC954458FB069F821B6526B38",
-  "previous_id": 1023443,
+  "order_id": 2,
   "previous_guid": "1EBCBC24EFCF429F8F34D7099EF6211E",
   "type_id": 3,
   "title": "Amount",
@@ -43,4 +43,3 @@ describe('Step Component validator', function() {
 	});
     });
 });
-
