@@ -47,6 +47,7 @@ console.log(ProtocolsIOValidator.validate(u, User))
 ```
 
 # Objects
+**Note**: Under guidance from the Protocols.IO API developer the following fields are currently the only ones that can be confidently said to never be null: id, title, uri, and created_on. Code your checks around this appropriately.
 
 ## User
 | property | type | description |
@@ -144,9 +145,9 @@ There are LOTS of Step Component Types: [Read More Here](docs/StepComponentTypes
 | property | type | description |
 |----|---|---|
 | title | string | title of a case. |
-| label | string | label of a case. |
-| step_id | integer | linked step id. |
-| step_guid | string | linked step guid. |
+| label | string OR null | label of a case. |
+| step_id | integer OR null | linked step id. |
+| step_guid | string OR null | linked step guid. |
 
 
 # Object Validation
