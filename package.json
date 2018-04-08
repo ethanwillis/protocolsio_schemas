@@ -1,6 +1,6 @@
 {
   "name": "protocolsio-schemas",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Schemas for objects used by Protocols.io API v3",
   "main": "build/index.js",
   "scripts": {
