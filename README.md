@@ -169,7 +169,37 @@ let u = {
 console.log(ProtocolsIOValidator.validate(u, User))
 ```
 
-The ProtocolsIOValidator is an instance of the Validator class from the json schema package. To learn more about what validate returns please visit the [jsonschema documentation](https://www.npmjs.com/package/jsonschema)
+### Example Validator Output
+```javascript
+ValidatorResult {
+  instance:
+   { name: 'Vladimir Frolov',
+     affiliation: null,
+     username: 'vladimir-frolov10',
+     link: null,
+     image:
+      { source: 'https://s3.amazonaws.com/pr-journal/djqbjf6.jpg',
+        placeholder: 'https://s3.amazonaws.com/pr-journal/djqbjf6.jpg' } },
+  schema:
+   { id: '/ProtocolsIO/User',
+     title: 'User',
+     description: 'A Protocols.io User object. http://apidoc.protocols.io/v3/#user-object',
+     type: 'object',
+     properties:
+      { name: [Object],
+        affiliation: [Object],
+        username: [Object],
+        link: [Object],
+        image: [Object] },
+     required: [ 'name', 'affiliation', 'username', 'link', 'image' ] },
+  propertyPath: 'instance',
+  errors: [],
+  throwError: undefined,
+  disableFormat: false }
+
+```
+
+The ProtocolsIOValidator is an instance of the Validator class from the json schema package. To learn more about what validate returns and how it works please visit the [jsonschema documentation](https://www.npmjs.com/package/jsonschema)
 
 # Development
 
