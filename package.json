@@ -4,7 +4,7 @@
   "description": "Schemas for objects used by Protocols.io API v3",
   "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "build": "babel ./src/schemas --out-dir build/schemas && babel ./src/test --out-dir build/test && babel ./src/index.js --out-file build/index.js"
   },
   "repository": {
@@ -27,6 +27,8 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1"
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.1.2",
+    "mocha": "^5.0.5"
   }
 }

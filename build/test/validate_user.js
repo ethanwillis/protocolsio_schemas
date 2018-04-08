@@ -4,6 +4,8 @@ var _ProtocolsIOValidator = require('./ProtocolsIOValidator');
 
 var _User = require('../schemas/User');
 
+var assert = require('chai').assert;
+
 var u = {
   "user": {
     "name": "Vladimir Frolov",
@@ -17,4 +19,10 @@ var u = {
   }
 };
 
-console.log(_ProtocolsIOValidator.ProtocolsIOValidator.validate(u, _User.User));
+describe('User validator', function () {
+  describe('#validate()', function () {
+    it('should return no errors when a valid user object is passed in', function () {
+      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(u, _User.User)['errors'], 0);
+    });
+  });
+});

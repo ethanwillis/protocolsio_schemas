@@ -1,5 +1,6 @@
 import { ProtocolsIOValidator } from './ProtocolsIOValidator'
 import { Reagent } from '../schemas/Reagent';
+var assert = require('chai').assert;
 
 let r = {
   "id": 19751,
@@ -20,4 +21,10 @@ let r = {
   }
 }
 
-console.log(ProtocolsIOValidator.validate(r, Reagent))
+describe('Reagent validator', function() {
+    describe('#validate()', function() {
+	it('should return no errors when a valid reagent object is passed in', function() {
+	    assert.lengthOf((ProtocolsIOValidator.validate(r, Reagent))['errors'], 0);
+	});
+    });
+});

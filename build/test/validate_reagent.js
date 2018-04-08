@@ -4,6 +4,8 @@ var _ProtocolsIOValidator = require('./ProtocolsIOValidator');
 
 var _Reagent = require('../schemas/Reagent');
 
+var assert = require('chai').assert;
+
 var r = {
   "id": 19751,
   "mol_weight": 0,
@@ -23,4 +25,10 @@ var r = {
   }
 };
 
-console.log(_ProtocolsIOValidator.ProtocolsIOValidator.validate(r, _Reagent.Reagent));
+describe('Reagent validator', function () {
+  describe('#validate()', function () {
+    it('should return no errors when a valid reagent object is passed in', function () {
+      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(r, _Reagent.Reagent)['errors'], 0);
+    });
+  });
+});

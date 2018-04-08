@@ -4,6 +4,8 @@ var _ProtocolsIOValidator = require('./ProtocolsIOValidator');
 
 var _Comment = require('../schemas/Comment');
 
+var assert = require('chai').assert;
+
 var c1 = {
   "id": 16620,
   "parent_id": 0,
@@ -63,5 +65,13 @@ var c2 = {
   }]
 };
 
-console.log(_ProtocolsIOValidator.ProtocolsIOValidator.validate(c1, _Comment.Comment));
-console.log(_ProtocolsIOValidator.ProtocolsIOValidator.validate(c2, _Comment.Comment));
+describe('Comment validator', function () {
+  describe('#validate()', function () {
+    it('should return no errors when a valid object without threaded comments is passed in', function () {
+      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(c1, _Comment.Comment)['errors'], 0);
+    });
+    it('should return no errors when a valid object with threaded comments is passed in', function () {
+      assert.lengthOf(_ProtocolsIOValidator.ProtocolsIOValidator.validate(c2, _Comment.Comment)['errors'], 0);
+    });
+  });
+});
