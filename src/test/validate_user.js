@@ -14,10 +14,10 @@ let u1_valid = {
 }
 
 describe('User validator', function() {
-    describe('#validate()', function() {
-    	it('should return no errors when a valid user object is passed in', function() {
-        let validator_result = ProtocolsIOValidator.validate(u1_valid, User);
-        assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
-    	});
-    });
+  describe('#validate()', function() {
+  	it('should return no errors when a valid user object is passed in', function() {
+      let validator_result = ProtocolsIOValidator.validate(u1_valid, User);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
+  	});
+  });
 });

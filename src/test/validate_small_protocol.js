@@ -16,10 +16,10 @@ let sp1_valid = {
 }
 
 describe('Small Protocol validator', function() {
-    describe('#validate()', function() {
-	it('should return no errors when a valid small protocol object is passed in', function() {
-    let validator_result = ProtocolsIOValidator.validate(sp1_valid, SmallProtocol);
-    assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
-	});
-    });
+  describe('#validate()', function() {
+  	it('should return no errors when a valid small protocol object is passed in', function() {
+      let validator_result = ProtocolsIOValidator.validate(sp1_valid, SmallProtocol);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
+  	});
+  });
 });

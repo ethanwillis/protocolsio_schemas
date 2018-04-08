@@ -22,10 +22,10 @@ let r1_valid = {
 }
 
 describe('Reagent validator', function() {
-    describe('#validate()', function() {
-	it('should return no errors when a valid reagent object is passed in', function() {
-    let validator_result = ProtocolsIOValidator.validate(r1_valid, Reagent);
-    assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
-	});
-    });
+  describe('#validate()', function() {
+  	it('should return no errors when a valid reagent object is passed in', function() {
+      let validator_result = ProtocolsIOValidator.validate(r1_valid, Reagent);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
+  	});
+  });
 });

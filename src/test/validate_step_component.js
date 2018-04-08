@@ -34,14 +34,15 @@ let sc2_valid = {
 };
 
 describe('Step Component validator', function() {
-    describe('#validate', function() {
-	it('should return no errors when a step component object with a source containing a description is passed in', function() {
-    let validator_result = ProtocolsIOValidator.validate(sc1_valid, StepComponent);
-    assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
-	});
-	it('should return no errors when a step component object with a source containing other things is passed in', function() {
-    let validator_result = ProtocolsIOValidator.validate(sc2_valid, StepComponent);
-    assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
-	});
-    });
+  describe('#validate', function() {
+  	it('should return no errors when a step component object with a source containing a description is passed in', function() {
+      let validator_result = ProtocolsIOValidator.validate(sc1_valid, StepComponent);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
+  	});
+    
+  	it('should return no errors when a step component object with a source containing other things is passed in', function() {
+      let validator_result = ProtocolsIOValidator.validate(sc2_valid, StepComponent);
+      assert.lengthOf(validator_result['errors'], 0, validator_result['errors']);
+  	});
+  });
 });
