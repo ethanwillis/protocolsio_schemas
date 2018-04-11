@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 // Depends on { StepComponent }
 
 var Step = {
-	"id": "/ProtocolsIO/Step",
+	"id": "./Step",
 	"title": "Step",
 	"description": "A Protocols.io Step Object. http://apidoc.protocols.io/v3/#step-object",
 	"type": "object",

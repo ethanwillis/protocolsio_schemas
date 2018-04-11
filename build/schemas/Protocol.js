@@ -8,7 +8,7 @@ Object.defineProperty(exports, "__esModule", {
 // Depends on { SmallProtocol }
 
 var Protocol = {
-	"id": "/ProtocolsIO/Protocol",
+	"id": "./Protocol",
 	"title": "Protocol",
 	"description": "A Protocols.io Protocol object. http://apidoc.protocols.io/v3/#protocol-object",
 	"type": "object",

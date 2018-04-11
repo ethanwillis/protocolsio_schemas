@@ -9,7 +9,7 @@ import { Reagent } from './Reagent'
 
 // "Description" Type: Description of the step, can contain html strings
 let StepComponentType1 = {
-	"id": "/ProtocolsIO/StepComponentType1",
+	"id": "./StepComponentType1",
 	"title": "StepComponentType1",
 	"description": "A Protocols.io StepComponentType1 object. Description Type: Description of the step, can contain html tags. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
@@ -26,7 +26,7 @@ let StepComponentType1 = {
 
 // "Amount" Type: A quantity of something, typically the total of a reagent, size, value etc.
 let StepComponentType3 = {
-	"id": "/ProtocolsIO/StepComponentType3",
+	"id": "./StepComponentType3",
 	"title": "StepComponentType3",
 	"description": "A Protocols.io StepComponentType3 object. Amount Type: A quantity of something, typically the total of a reagent, size, value etc. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
@@ -53,7 +53,7 @@ let StepComponentType3 = {
 
 // "Duration" Type
 let StepComponentType4 = {
-	"id": "/ProtocolsIO/StepComponentType4",
+	"id": "./StepComponentType4",
 	"title": "StepComponentType4",
 	"description": "A Protocols.io StepComponentType4 object. Duration Type. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
@@ -75,7 +75,7 @@ let StepComponentType4 = {
 
 // "Title" Type
 let StepComponentType6 = {
-	"id": "/ProtocolsIO/StepComponentType6",
+	"id": "./StepComponentType6",
 	"title": "StepComponentType6",
 	"description": "A Protocols.io StepComponentType6 object. Title Type. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
@@ -92,7 +92,7 @@ let StepComponentType6 = {
 
 // "Link" Type
 let StepComponentType7 = {
-	"id": "/ProtocolsIO/StepComponentType7",
+	"id": "./StepComponentType7",
 	"title": "StepComponentType7",
 	"description": "A Protocols.io StepComponentType7 object. Link Type. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
@@ -109,7 +109,7 @@ let StepComponentType7 = {
 
 // "Software Package" Type
 let StepComponentType8 = {
-	"id": "/ProtocolsIO/StepComponentType8",
+	"id": "./StepComponentType8",
 	"title": "StepComponentType8",
 	"description": "A Protocols.io StepComponentType8 object. Software Package Type. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
@@ -147,7 +147,7 @@ let StepComponentType8 = {
 
 // "Dataset Package" Type
 let StepComponentType9 = {
-	"id": "/ProtocolsIO/StepComponentType9",
+	"id": "./StepComponentType9",
 	"title": "StepComponentType9",
 	"description": "A Protocols.io StepComponentType9 object. Dataset Package Type. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
@@ -169,7 +169,7 @@ let StepComponentType9 = {
 
 // "Comment" Type
 let StepComponentType13 = {
-	"id": "/ProtocolsIO/StepComponentType13",
+	"id": "./StepComponentType13",
 	"title": "StepComponentType13",
 	"description": "A Protocols.io StepComponentType13 object. Comment Type. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
@@ -178,7 +178,7 @@ let StepComponentType13 = {
 
 // "Command Package" Type
 let StepComponentType15 = {
-	"id": "/ProtocolsIO/StepComponentType15",
+	"id": "./StepComponentType15",
 	"title": "StepComponentType15",
 	"description": "A Protocols.io StepComponentType15 object. Command Package Type. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
@@ -208,7 +208,7 @@ let StepComponentType15 = {
 
 // "Expected Result" Type
 let StepComponentType17 = {
-	"id": "/ProtocolsIO/StepComponentType17",
+	"id": "./StepComponentType17",
 	"title": "StepComponentType17",
 	"description": "A Protocols.io StepComponentType17 object.i Expected Result Type. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
@@ -225,7 +225,7 @@ let StepComponentType17 = {
 
 // "Protocol" Type
 let StepComponentType18 = {
-	"id": "/ProtocolsIO/StepComponentType18",
+	"id": "./StepComponentType18",
 	"title": "StepComponentType18",
 	"description": "A Protocols.io StepComponentType18 object. Protocol Type. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
@@ -234,7 +234,7 @@ let StepComponentType18 = {
 
 // "Safety Information" Type
 let StepComponentType19 = {
-	"id": "/ProtocolsIO/StepComponentType19",
+	"id": "./StepComponentType19",
 	"title": "StepComponentType19",
 	"description": "A Protocols.io StepComponentType19 object. Safety Information Type. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
@@ -256,7 +256,7 @@ let StepComponentType19 = {
 
 // "Reagent" Type
 let StepComponentType20 = {
-	"id": "/ProtocolsIO/StepComponentType20",
+	"id": "./StepComponentType20",
 	"title": "StepComponentType20",
 	"description": "A Protocols.io StepComponentType20 object. Reagent Type. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
@@ -265,7 +265,7 @@ let StepComponentType20 = {
 
 // "Step Cases" Type
 let StepComponentType21 = {
-	"id": "/ProtocolsIO/StepComponentType21",
+	"id": "./StepComponentType21",
 	"title": "StepComponentType21",
 	"description": "A Protocols.io StepComponentType21 object. Step Cases Type. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
@@ -285,7 +285,7 @@ let StepComponentType21 = {
 
 // "Go To Previous Step" Type
 let StepComponentType22 = {
-	"id": "/ProtocolsIO/StepComponentType22",
+	"id": "./StepComponentType22",
 	"title": "StepComponentType22",
 	"description": "A Protocols.io StepComponentType22 object. Go To Previous Step Type. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
@@ -307,7 +307,7 @@ let StepComponentType22 = {
 
 // "Temperature" Type
 let StepComponentType24 = {
-	"id": "/ProtocolsIO/StepComponentType24",
+	"id": "./StepComponentType24",
 	"title": "StepComponentType24",
 	"description": "A Protocols.io StepComponentType24 object. Temperature Type. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
@@ -334,7 +334,7 @@ let StepComponentType24 = {
 
 // "Concentration" Type
 let StepComponentType25 = {
-	"id": "/ProtocolsIO/StepComponentType25",
+	"id": "./StepComponentType25",
 	"title": "StepComponentType25",
 	"description": "A Protocols.io StepComponentType25 object. Concentration Type. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",
@@ -361,7 +361,7 @@ let StepComponentType25 = {
 
 // "Note" Type
 let StepComponentType26 = {
-	"id": "/ProtocolsIO/StepComponentType26",
+	"id": "./StepComponentType26",
 	"title": "StepComponentType26",
 	"description": "A Protocols.io StepComponentType26 object. Note Type. http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",

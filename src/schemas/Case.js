@@ -1,5 +1,5 @@
 let Case = {
-	"id": "/ProtocolsIO/Case",
+	"id": "./Case",
 	"title": "Case",
 	"description": "A Protocols.io Case object. See Case type 21: http://apidoc.protocols.io/v3/#step-component-types",
 	"type": "object",

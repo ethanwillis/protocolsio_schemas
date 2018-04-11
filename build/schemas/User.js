@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 // Depends on { Image }
 
 var User = {
-	"id": "/ProtocolsIO/User",
+	"id": "./User",
 	"title": "User",
 	"description": "A Protocols.io User object. http://apidoc.protocols.io/v3/#user-object",
 	"type": "object",

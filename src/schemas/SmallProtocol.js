@@ -1,7 +1,7 @@
 // Depends on { Image }
 
 let SmallProtocol = {
-	"id": "/ProtocolsIO/SmallProtocol",
+	"id": "./SmallProtocol",
 	"title": "SmallProtocol",
 	"description": "A Protocols.io SmallProtocol object. http://apidoc.protocols.io/v3/#small-protocol-object",
 	"type": "object",

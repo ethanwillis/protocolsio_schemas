@@ -1,7 +1,7 @@
 // Depends on { Image }
 
 let User = {
-	"id": "/ProtocolsIO/User",
+	"id": "./User",
 	"title": "User",
 	"description": "A Protocols.io User object. http://apidoc.protocols.io/v3/#user-object",
 	"type": "object",

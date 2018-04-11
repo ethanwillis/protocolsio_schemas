@@ -1,7 +1,7 @@
 // Depends on { StepComponent }
 
 let Step = {
-	"id": "/ProtocolsIO/Step",
+	"id": "./Step",
 	"title": "Step",
 	"description": "A Protocols.io Step Object. http://apidoc.protocols.io/v3/#step-object",
 	"type": "object",

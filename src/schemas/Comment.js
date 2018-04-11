@@ -2,7 +2,7 @@
 // Depends on { Image }
 
 let Comment = {
-	"id": "/ProtocolsIO/Comment",
+	"id": "./Comment",
 	"title": "Comment",
 	"description": "A Protocols.io Comment object. http://apidoc.protocols.io/v3/#comment-object",
 	"type": "object",

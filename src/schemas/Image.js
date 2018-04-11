@@ -1,5 +1,5 @@
 let Image = {
-	"id": "/ProtocolsIO/Image",
+	"id": "./Image",
 	"title": "Image",
 	"description": "A Protocols.io Image object. http://apidoc.protocols.io/v3/#image-object",
 	"type": "object",

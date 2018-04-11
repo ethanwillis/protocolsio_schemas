@@ -13,7 +13,7 @@ Object.defineProperty(exports, "__esModule", {
 // }
 
 var StepComponent = {
-	"id": "/ProtocolsIO/StepComponent",
+	"id": "./StepComponent",
 	"title": "StepComponent",
 	"description": "A Protocols.io StepComponent object. http://apidoc.protocols.io/v3/#step-component-object",
 	"type": "object",

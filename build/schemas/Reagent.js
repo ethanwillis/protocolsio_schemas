@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 // Depends on { User }
 
 var Reagent = {
-	"id": "/ProtocolsIO/Reagent",
+	"id": "./Reagent",
 	"title": "Reagent",
 	"description": "A Protocols.io Reagent object. http://apidoc.protocols.io/v3/#reagent-object",
 	"type": "object",
