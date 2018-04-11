@@ -25,5 +25,5 @@ export {
 	 StepComponentType20, StepComponentType21, StepComponentType22,
 	 StepComponentType24, StepComponentType25, StepComponentType26,
    Comment, User, Image, Reagent, Protocol, SmallProtocol,
-   Step, Case, ProtocolsIOValidator
+   Step, Case, ProtocolsIOValidator, StepComponent
 }

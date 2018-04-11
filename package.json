@@ -1,11 +1,11 @@
 {
   "name": "protocolsio-schemas",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Schemas for objects used by Protocols.io API v3",
   "main": "build/index.js",
   "scripts": {
     "test": "mocha",
-    "build": "babel ./src/schemas --out-dir build/schemas && babel ./src/test --out-dir build/test"
+    "build": "babel ./src/ --out-dir ./build"
   },
   "repository": {
     "type": "git",
